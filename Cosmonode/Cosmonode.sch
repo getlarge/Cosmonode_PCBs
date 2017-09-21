@@ -880,7 +880,7 @@ $EndComp
 Wire Wire Line
 	4050 4450 3950 4450
 Text Notes 4750 2800 2    60   ~ 0
-Really useful ?
+Does not work, to update!
 Text Label 10450 900  2    60   ~ 0
 BAT+
 $Comp
