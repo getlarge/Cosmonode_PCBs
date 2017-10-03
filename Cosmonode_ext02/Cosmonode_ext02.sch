@@ -32,8 +32,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:BSS138
-LIBS:XC6206P302MR_SOT23_
-LIBS:Cosmonode_ext02_v0.3-cache
+LIBS:Cosmonode_ext02-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -189,7 +188,7 @@ F 1 "CONN_01X04" V 4300 2700 50  0000 C CNN
 F 2 "Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 4200 2700 50  0001 C CNN
 F 3 "" H 4200 2700 50  0001 C CNN
 	1    4200 2700
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L C_Small C1
@@ -329,7 +328,7 @@ F 1 "CONN_01X04" V 7350 2700 50  0000 C CNN
 F 2 "Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 7250 2700 50  0001 C CNN
 F 3 "" H 7250 2700 50  0001 C CNN
 	1    7250 2700
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L C_Small C5
@@ -577,4 +576,22 @@ Text Notes 7300 2400 2    60   ~ 0
 SENSOR
 Text Notes 4250 2450 2    60   ~ 0
 SENSOR
+Text Label 7250 5400 2    60   ~ 0
+A6
+Text Label 8200 5400 2    60   ~ 0
+A7
+NoConn ~ 8200 5400
+NoConn ~ 7250 5400
+$Comp
+L CONN_01X01 J7
+U 1 1 59D33BEF
+P 4750 6050
+F 0 "J7" H 4750 6150 50  0000 C CNN
+F 1 "Aloes_Logo" V 4850 6050 50  0000 C CNN
+F 2 "Aloes:Aloes_mini" H 4750 6050 50  0001 C CNN
+F 3 "" H 4750 6050 50  0001 C CNN
+	1    4750 6050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4550 6050
 $EndSCHEMATC

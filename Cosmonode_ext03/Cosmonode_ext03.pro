@@ -1,4 +1,4 @@
-update=ven. 29 sept. 2017 18:14:54 CEST
+update=sam. 30 sept. 2017 19:07:42 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=/home/ed/Kicad/kicad-library/library;/home/ed/Kicad/library
@@ -64,3 +62,5 @@ LibName32=contrib
 LibName33=valves
 LibName34=BSS138
 LibName35=XC6206P302MR_SOT23_
+[general]
+version=1

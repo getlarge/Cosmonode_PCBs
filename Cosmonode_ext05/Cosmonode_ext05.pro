@@ -1,4 +1,4 @@
-update=sam. 30 sept. 2017 14:00:19 CEST
+update=lun. 02 oct. 2017 11:39:19 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -149,5 +149,15 @@ LibName119=TL431ACDBZR
 LibName120=TSL2561T_6P-3.8X2.6MM_
 LibName121=wemos_mini
 LibName122=XC6206P302MR_SOT23_
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [general]
 version=1
