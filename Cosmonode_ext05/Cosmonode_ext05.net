@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/ed/Kicad/Cosmonode_full/Cosmonode_ext05/Cosmonode_ext05.sch)
-    (date "dim. 01 oct. 2017 22:23:32 CEST")
+    (date "mer. 04 oct. 2017 00:23:28 CEST")
     (tool "Eeschema 4.0.7-e2-6376~58~ubuntu17.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -24,7 +24,7 @@
       (tstamp 59721428))
     (comp (ref Y1)
       (value Crystal_GND2)
-      (footprint SMD-RESONATOR-8MHZ-33PF-0.1__3P-3.2X1.3MM_:X3-SMD-3.6X1.3X0.8MM)
+      (footprint SMD-RESONATOR-8MHZ-33PF:X3-SMD-3.6X1.3X0.8MM)
       (libsource (lib device) (part Crystal_GND2))
       (sheetpath (names /) (tstamps /))
       (tstamp 5975B8B0))
@@ -272,12 +272,12 @@
         (pin (num 5) (name GND) (type power_in))
         (pin (num 6) (name Shield) (type passive)))))
   (libraries
-    (library (logical device)
-      (uri /home/ed/Kicad/kicad-library/library/device.lib))
+    (library (logical CH340G)
+      (uri /home/ed/Kicad/library/CH340G.lib))
     (library (logical conn)
       (uri /home/ed/Kicad/kicad-library/library/conn.lib))
-    (library (logical CH340G)
-      (uri /home/ed/Kicad/library/CH340G.lib)))
+    (library (logical device)
+      (uri /home/ed/Kicad/kicad-library/library/device.lib)))
   (nets
     (net (code 1) (name "Net-(J1-Pad8)")
       (node (ref J1) (pin 8))

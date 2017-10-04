@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/ed/Kicad/Cosmonode_full/Cosmonode_ext05/Cosmonode_ext05.sch</source>
-    <date>dim. 01 oct. 2017 22:23:37 CEST</date>
+    <date>mer. 04 oct. 2017 00:23:31 CEST</date>
     <tool>Eeschema 4.0.7-e2-6376~58~ubuntu17.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -29,7 +29,7 @@
     </comp>
     <comp ref="Y1">
       <value>Crystal_GND2</value>
-      <footprint>SMD-RESONATOR-8MHZ-33PF-0.1__3P-3.2X1.3MM_:X3-SMD-3.6X1.3X0.8MM</footprint>
+      <footprint>SMD-RESONATOR-8MHZ-33PF:X3-SMD-3.6X1.3X0.8MM</footprint>
       <libsource lib="device" part="Crystal_GND2"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5975B8B0</tstamp>
@@ -334,14 +334,14 @@
     </libpart>
   </libparts>
   <libraries>
-    <library logical="device">
-      <uri>/home/ed/Kicad/kicad-library/library/device.lib</uri>
+    <library logical="CH340G">
+      <uri>/home/ed/Kicad/library/CH340G.lib</uri>
     </library>
     <library logical="conn">
       <uri>/home/ed/Kicad/kicad-library/library/conn.lib</uri>
     </library>
-    <library logical="CH340G">
-      <uri>/home/ed/Kicad/library/CH340G.lib</uri>
+    <library logical="device">
+      <uri>/home/ed/Kicad/kicad-library/library/device.lib</uri>
     </library>
   </libraries>
   <nets>

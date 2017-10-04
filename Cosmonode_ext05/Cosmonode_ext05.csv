@@ -1,6 +1,6 @@
 Reference, Value, Footprint, Datasheet
 "J1","CH340G","Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm","DOCUMENTATION"
-"Y1","Crystal_GND2","SMD-RESONATOR-8MHZ-33PF-0.1__3P-3.2X1.3MM_:X3-SMD-3.6X1.3X0.8MM",""
+"Y1","Crystal_GND2","SMD-RESONATOR-8MHZ-33PF:X3-SMD-3.6X1.3X0.8MM",""
 "C1","100nF","Capacitors_SMD:C_0603_HandSoldering",""
 "C2","100nF","Capacitors_SMD:C_0603_HandSoldering",""
 "R2","1K","Resistors_SMD:R_0603_HandSoldering",""

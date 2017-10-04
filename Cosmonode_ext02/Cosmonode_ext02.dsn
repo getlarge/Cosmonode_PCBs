@@ -25,10 +25,8 @@
             157480 -123190  178435 -123190  178435 -88900  156845 -88900
             156845 -88900)
     )
-    (plane "Net-(C1-Pad1)" (polygon F.Cu 0  178435 -123190  156845 -123190  154305 -120650  154305 -91440
-            156845 -88900  178435 -88900))
-    (plane "Net-(C1-Pad1)" (polygon B.Cu 0  178435 -123190  156845 -123190  154305 -120650  154305 -91440
-            156845 -88900  178435 -88900))
+    (plane "Net-(C1-Pad1)" (polygon F.Cu 0  154305 -91440  154305 -120650  156845 -123190  178435 -123190
+            178435 -88900  156845 -88900  154305 -91440))
     (via "Via[0-1]_600:400_um")
     (rule
       (width 250)
@@ -295,10 +293,10 @@
       (pins J4-1)
     )
     (net +3V3
-      (pins J4-2 J4-3 J5-3 Q1-1 Q2-1)
+      (pins J5-3 Q1-1 Q2-1 J4-2 J4-3)
     )
     (net GND
-      (pins J4-4 J4-5 J6-3)
+      (pins J6-3 J4-4 J4-5)
     )
     (net /A4
       (pins J4-6)
@@ -312,10 +310,10 @@
     (net /A6
       (pins J3-8)
     )
-    (net /A7
+    (net /AREF
       (pins J4-8)
     )
-    (class kicad_default "" +3V3 +5V /A0 /A1 /A4 /A5 /A6 /A7 /BAT+ /D3 /D3_5V
+    (class kicad_default "" +3V3 +5V /A0 /A1 /A4 /A5 /A6 /AREF /BAT+ /D3 /D3_5V
       /D4 /D4_5V /D5 /D6 /D7 GND "Net-(C1-Pad1)" "Net-(C1-Pad2)" "Net-(C5-Pad2)"
       "Net-(J5-Pad2)"
       (circuit

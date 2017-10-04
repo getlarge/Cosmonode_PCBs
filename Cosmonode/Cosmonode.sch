@@ -133,7 +133,7 @@ L C_Small C2
 U 1 1 59721675
 P 1350 1750
 F 0 "C2" H 1360 1820 50  0000 L CNN
-F 1 "100nF" H 1360 1670 50  0000 L CNN
+F 1 "100nF" V 1250 1650 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1350 1750 50  0001 C CNN
 F 3 "" H 1350 1750 50  0001 C CNN
 	1    1350 1750
@@ -1149,8 +1149,6 @@ $EndComp
 Wire Wire Line
 	4450 2600 4450 2700
 Connection ~ 4450 2600
-Text Label 1050 1750 2    60   ~ 0
-AREF
 Connection ~ 1150 1750
 $Comp
 L GS3 J6
@@ -1240,4 +1238,9 @@ Text Label 6100 2300 0    60   ~ 0
 VCC_NRF24
 Wire Wire Line
 	6100 2350 6100 2300
+Text Label 1550 1650 2    60   ~ 0
+AREF
+Wire Wire Line
+	1550 1750 1550 1650
+Connection ~ 1550 1750
 $EndSCHEMATC

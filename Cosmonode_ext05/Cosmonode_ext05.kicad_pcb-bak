@@ -3,7 +3,7 @@
   (general
     (links 43)
     (no_connects 0)
-    (area 146.609999 93.904999 172.160001 128.345001)
+    (area 144.165 85.565 192 130.763333)
     (thickness 1.6)
     (drawings 31)
     (tracks 189)
@@ -64,8 +64,8 @@
     (aux_axis_origin 0 0)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x00030_80000001)
-      (usegerberextensions false)
+      (layerselection 0x010ff_80000001)
+      (usegerberextensions true)
       (excludeedgelayer true)
       (linewidth 0.100000)
       (plotframeref false)
@@ -85,9 +85,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory /home/ed/Kicad/Cosmonode_full/Cosmonode_ext05/gerber/))
   )
 
   (net 0 "")

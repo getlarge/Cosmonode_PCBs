@@ -53,7 +53,7 @@ U 1 1 598047BC
 P 7450 5050
 F 0 "J3" H 7450 5450 50  0000 C CNN
 F 1 "CONN_01X08" V 7550 5050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 7450 5050 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm" H 7450 5050 50  0001 C CNN
 F 3 "" H 7450 5050 50  0001 C CNN
 	1    7450 5050
 	1    0    0    -1  
@@ -64,7 +64,7 @@ U 1 1 598047EF
 P 8400 5050
 F 0 "J4" H 8400 5450 50  0000 C CNN
 F 1 "CONN_01X08" V 8500 5050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 8400 5050 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm" H 8400 5050 50  0001 C CNN
 F 3 "" H 8400 5050 50  0001 C CNN
 	1    8400 5050
 	1    0    0    -1  
@@ -594,4 +594,16 @@ F 3 "" H 4750 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4550 6050
+$Comp
+L CONN_01X01 J8
+U 1 1 59D41B96
+P 5250 6050
+F 0 "J8" H 5250 6150 50  0000 C CNN
+F 1 "OSHW_Logo" V 5350 6050 50  0000 C CNN
+F 2 "Symbols:OSHW-Logo_5.7x6mm_SilkScreen" H 5250 6050 50  0001 C CNN
+F 3 "" H 5250 6050 50  0001 C CNN
+	1    5250 6050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5050 6050
 $EndSCHEMATC

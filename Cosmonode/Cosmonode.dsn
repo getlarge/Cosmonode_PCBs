@@ -95,11 +95,11 @@
     (component "SMD-RESONATOR-8MHZ-33PF:X3-SMD-3.6X1.3X0.8MM"
       (place Y1 177800 -85090 front 0 (PN Crystal_GND2))
     )
-    (component Pin_Headers:Pin_Header_Straight_1x09_Pitch2.54mm
-      (place J3 191770 -84455 front 0 (PN CONN_01X09))
-    )
     (component Connectors:GS3
       (place J6 161290 -109220 front 90 (PN GS3))
+    )
+    (component Pin_Headers:Pin_Header_Straight_1x09_Pitch2.54mm
+      (place J3 191135 -84455 front 0 (PN CONN_01X09))
     )
   )
   (library
@@ -433,6 +433,19 @@
       (pin Rect[T]Pad_700x1700_um 2 0 0)
       (pin Rect[T]Pad_700x1700_um 3 1200 0)
     )
+    (image Connectors:GS3
+      (outline (path signal 50  -1150 2150  1150 2150))
+      (outline (path signal 50  1150 2150  1150 -2150))
+      (outline (path signal 50  1150 -2150  -1150 -2150))
+      (outline (path signal 50  -1150 -2150  -1150 2150))
+      (outline (path signal 120  -890 1910  -890 -1910))
+      (outline (path signal 120  -890 -1910  890 -1910))
+      (outline (path signal 120  890 -1910  890 1910))
+      (outline (path signal 120  -890 1910  890 1910))
+      (pin Rect[T]Pad_1270x970_um 1 0 1270)
+      (pin Rect[T]Pad_1270x970_um 2 0 0)
+      (pin Rect[T]Pad_1270x970_um 3 0 -1270)
+    )
     (image Pin_Headers:Pin_Header_Straight_1x09_Pitch2.54mm
       (outline (path signal 100  -635 1270  1270 1270))
       (outline (path signal 100  1270 1270  1270 -21590))
@@ -458,19 +471,6 @@
       (pin Oval[A]Pad_1700x1700_um 7 0 -15240)
       (pin Oval[A]Pad_1700x1700_um 8 0 -17780)
       (pin Oval[A]Pad_1700x1700_um 9 0 -20320)
-    )
-    (image Connectors:GS3
-      (outline (path signal 50  -1150 2150  1150 2150))
-      (outline (path signal 50  1150 2150  1150 -2150))
-      (outline (path signal 50  1150 -2150  -1150 -2150))
-      (outline (path signal 50  -1150 -2150  -1150 2150))
-      (outline (path signal 120  -890 1910  -890 -1910))
-      (outline (path signal 120  -890 -1910  890 -1910))
-      (outline (path signal 120  890 -1910  890 1910))
-      (outline (path signal 120  -890 1910  890 1910))
-      (pin Rect[T]Pad_1270x970_um 1 0 1270)
-      (pin Rect[T]Pad_1270x970_um 2 0 0)
-      (pin Rect[T]Pad_1270x970_um 3 0 -1270)
     )
     (padstack Oval[A]Pad_1200x1700_um
       (shape (path F.Cu 1200  0 -250  0 250))
@@ -545,14 +545,14 @@
   (network
     (net GND
       (pins C1-2 C2-1 C3-2 C4-2 C5-2 C6-2 C7-1 C8-1 J2-4 J2-5 J5-2 R9-2 SW1-1 U1-3
-        U1-5 U1-21 U2-7 U2-10 U3-1 U4-4 U5-1 U6-3 Y1-2 J3-8 J3-9)
+        U1-5 U1-21 U2-7 U2-10 U3-1 U4-4 U5-1 U6-3 Y1-2 J3-8)
     )
     (net /A3
       (pins C7-2 R8-2 R9-1 U1-26)
     )
     (net +3V3
       (pins C1-1 C6-1 C8-2 J2-2 J2-3 R1-1 R2-1 R3-1 R4-1 R5-1 R6-1 R7-2 U1-4 U1-6
-        U1-18 U4-3 U4-7 U4-8 U5-2 U6-2 J3-7 J6-2)
+        U1-18 U4-3 U4-7 U4-8 U5-2 U6-2 J6-2 J3-7)
     )
     (net /RST
       (pins C3-1 R3-2 SW1-2 U1-29 J3-1)
@@ -644,9 +644,6 @@
     (net "Net-(U2-Pad11)"
       (pins U2-11)
     )
-    (net "Net-(C2-Pad2)"
-      (pins C2-2 U1-20)
-    )
     (net "Net-(U3-Pad8)"
       (pins U3-8)
     )
@@ -656,11 +653,13 @@
     (net /VCC_RFM69
       (pins U2-9 J6-3)
     )
-    (class kicad_default "" +3V3 /A0 /A1 /A2 /A3 /A4 /A5 /A6 /A7 /ANT /BAT+
-      /D10 /D2 /D3 /D4 /D5 /D6 /D7 /D8 /D9 /MISO /MISO_NRF24 /MISO_RFM69 /MOSI
-      /MOSI_NRF24 /MOSI_RFM69 /RST /RX /SCK /SCK_NRF24 /SCK_RFM69 /TX /VCC_NRF24
-      /VCC_RFM69 GND "Net-(C2-Pad2)" "Net-(U1-Pad7)" "Net-(U1-Pad8)" "Net-(U2-Pad11)"
-      "Net-(U2-Pad3)" "Net-(U2-Pad4)" "Net-(U2-Pad5)" "Net-(U3-Pad8)"
+    (net /AREF
+      (pins C2-2 U1-20 J3-9)
+    )
+    (class kicad_default "" +3V3 /A0 /A1 /A2 /A3 /A4 /A5 /A6 /A7 /ANT /AREF
+      /BAT+ /D10 /D2 /D3 /D4 /D5 /D6 /D7 /D8 /D9 /MISO /MOSI /RST /RX /SCK
+      /TX /VCC_NRF24 /VCC_RFM69 GND "Net-(C2-Pad2)" "Net-(U1-Pad7)" "Net-(U1-Pad8)"
+      "Net-(U2-Pad11)" "Net-(U2-Pad3)" "Net-(U2-Pad4)" "Net-(U2-Pad5)" "Net-(U3-Pad8)"
       (circuit
         (use_via Via[0-1]_600:400_um)
       )

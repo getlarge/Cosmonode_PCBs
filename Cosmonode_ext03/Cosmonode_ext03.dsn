@@ -25,6 +25,8 @@
             170180 -94615  170180 -128905  149225 -128905  146685 -126365
             146685 -126365)
     )
+    (plane "Net-(J1-Pad2)" (polygon F.Cu 0  149225 -94615  146685 -97155  146685 -126365  149225 -128905
+            170180 -128905  170180 -94615  149860 -94615))
     (via "Via[0-1]_600:400_um")
     (rule
       (width 250)
@@ -45,6 +47,9 @@
     (component Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm
       (place J5 150495 -126365 back 90 (PN CONN_01X08))
       (place J6 150495 -97155 back 90 (PN CONN_01X08))
+    )
+    (component Aloes:Aloes_mini
+      (place J7 148590 -111760 front 90 (PN Aloes_Logo))
     )
   )
   (library
@@ -124,6 +129,8 @@
       (pin Oval[A]Pad_1700x1700_um 6 0 -12700)
       (pin Oval[A]Pad_1700x1700_um 7 0 -15240)
       (pin Oval[A]Pad_1700x1700_um 8 0 -17780)
+    )
+    (image Aloes:Aloes_mini
     )
     (padstack Round[A]Pad_1750_um
       (shape (circle F.Cu 1750))

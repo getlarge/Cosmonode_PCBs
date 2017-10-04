@@ -1,4 +1,4 @@
-update=mar. 03 oct. 2017 10:22:45 CEST
+update=mer. 04 oct. 2017 00:19:58 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,5 +61,15 @@ LibName31=contrib
 LibName32=valves
 LibName33=BSS138
 LibName34=XC6206P302MR_SOT23_
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [general]
 version=1
