@@ -22,11 +22,11 @@
     )
     (boundary
       (path pcb 0  146685 -88900  144145 -91440  144145 -120650  146685 -123190
-            181610 -123190  181610 -88900  178435 -88900  156845 -88900
-            146685 -88900  146685 -88900)
+            179070 -123190  181610 -120650  181610 -91440  179070 -88900
+            156845 -88900  146685 -88900  146685 -88900)
     )
-    (plane "Net-(J2-Pad7)" (polygon F.Cu 0  181610 -123190  146685 -123190  144145 -120650  144145 -91440
-            146685 -88900  181610 -88900))
+    (plane GND (polygon F.Cu 0  181610 -91440  181610 -120650  179070 -123190  146685 -123190
+            144145 -120650  144145 -91440  146685 -88900  179070 -88900))
     (via "Via[0-1]_600:400_um")
     (rule
       (width 250)
@@ -37,7 +37,7 @@
   )
   (placement
     (component "Symbols:OSHW-Logo_5.7x6mm_SilkScreen"
-      (place J1 158115 -98425 back 90 (PN OSHW_Logo))
+      (place J1 149225 -117475 back 90 (PN OSHW_Logo))
       (place J7 147320 -93345 front 90 (PN Aloes_Logo))
     )
     (component "MH-Z19:MH-Z19"
@@ -309,10 +309,9 @@
     (net /SCK
       (pins J8-6)
     )
-    (class kicad_default "" +3V3 +5V /A0 /A1 /A4 /A5 /A6 /A7 /AREF /BAT+ /D3
-      /D3_5V /D4 /D4_5V /D5 /D6 /D7 /MISO /MOSI /RST /RX /SCK /TX GND "Net-(C1-Pad1)"
-      "Net-(C1-Pad2)" "Net-(C5-Pad2)" "Net-(J2-Pad1)" "Net-(J2-Pad4)" "Net-(J2-Pad5)"
-      "Net-(J2-Pad7)" "Net-(J2-Pad8)" "Net-(J2-Pad9)" "Net-(J5-Pad2)"
+    (class kicad_default "" +3V3 +5V /A0 /A1 /A4 /A5 /A6 /AREF /BAT+ /D3 /D4
+      /D5 /D6 /D7 /MISO /MOSI /RST /RX /SCK /TX GND "Net-(J2-Pad1)" "Net-(J2-Pad4)"
+      "Net-(J2-Pad5)" "Net-(J2-Pad7)" "Net-(J2-Pad8)" "Net-(J2-Pad9)" "Net-(J5-Pad2)"
       (circuit
         (use_via Via[0-1]_600:400_um)
       )

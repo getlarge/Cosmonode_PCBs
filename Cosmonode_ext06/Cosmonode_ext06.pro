@@ -1,4 +1,4 @@
-update=sam. 30 sept. 2017 20:53:26 CEST
+update=jeu. 05 oct. 2017 12:35:50 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -65,5 +65,15 @@ LibName35=BNC_P7003
 LibName36=CA3140AMZ
 LibName37=ICL7660AIBAZA
 LibName38=TL081BCD
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [general]
 version=1

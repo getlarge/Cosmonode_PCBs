@@ -2349,7 +2349,7 @@
       (net 36 /VCC_RFM69))
   )
 
-  (module Pin_Headers:Pin_Header_Straight_1x09_Pitch2.54mm (layer F.Cu) (tedit 59650532) (tstamp 59D3752A)
+  (module Pin_Headers:Pin_Header_Straight_1x09_Pitch2.54mm (layer F.Cu) (tedit 59D49C9B) (tstamp 59D3752A)
     (at 191.135 84.455)
     (descr "Through hole straight pin header, 1x09, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x09 2.54mm single row")
@@ -2357,7 +2357,7 @@
     (fp_text reference J3 (at 0 -2.33) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value CONN_01X09 (at 0 22.65) (layer F.Fab)
+    (fp_text value CONN_01X09 (at 0 22.65) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.635 -1.27) (end 1.27 -1.27) (layer F.Fab) (width 0.1))

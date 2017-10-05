@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/ed/Kicad/Cosmonode_ext_01/Cosmonode_ext_01.sch</source>
-    <date>mer. 16 août 2017 17:13:14 CEST</date>
-    <tool>Eeschema 4.0.7-e1-6374~58~ubuntu16.04.1</tool>
+    <source>/home/ed/Kicad/Cosmonode_full/Cosmonode_ext01/Cosmonode_ext_01.sch</source>
+    <date>jeu. 05 oct. 2017 12:48:10 CEST</date>
+    <tool>Eeschema 4.0.7-e2-6376~58~ubuntu17.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Cosmonode_ext_01</title>
@@ -20,22 +20,22 @@
   </design>
   <components>
     <comp ref="J3">
-      <value>CONN_01X07</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm</footprint>
-      <libsource lib="conn" part="CONN_01X07"/>
+      <value>CONN_01X08</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X08"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>598047BC</tstamp>
     </comp>
     <comp ref="J5">
-      <value>CONN_01X07</value>
-      <footprint>Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm</footprint>
-      <libsource lib="conn" part="CONN_01X07"/>
+      <value>CONN_01X08</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X08"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>598047EF</tstamp>
     </comp>
     <comp ref="U1">
       <value>TSL2561T(6P-3.8X2.6MM)</value>
-      <footprint>TSL2561T_6P-3.8X2.6MM_:TMB6-1.55-3.8X2.6MM</footprint>
+      <footprint>TSL2561T:TMB6-1.55-3.8X2.6MM</footprint>
       <datasheet>TSL2561T</datasheet>
       <fields>
         <field name="Price">2.50 USD</field>
@@ -44,7 +44,7 @@
         <field name="Availability">Good</field>
         <field name="Description">Light to Digital Converters Light to Digital with I2C</field>
       </fields>
-      <libsource lib="TSL2561T_6P-3.8X2.6MM_" part="OPTICAL-TSL2561T(6P-3.8X2.6MM)"/>
+      <libsource lib="Cosmonode_ext_01-cache" part="OPTICAL-TSL2561T(6P-3.8X2.6MM)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>59804921</tstamp>
     </comp>
@@ -120,13 +120,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>59804FEF</tstamp>
     </comp>
-    <comp ref="J2">
-      <value>GS3</value>
-      <footprint>Connectors:GS3</footprint>
-      <libsource lib="conn" part="GS3"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>59805661</tstamp>
-    </comp>
     <comp ref="J9">
       <value>GS3</value>
       <footprint>Connectors:GS3</footprint>
@@ -134,19 +127,26 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5980583B</tstamp>
     </comp>
-    <comp ref="J7">
-      <value>GS3</value>
-      <footprint>Connectors:GS3</footprint>
-      <libsource lib="conn" part="GS3"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>598058D2</tstamp>
-    </comp>
     <comp ref="J8">
       <value>GS3</value>
       <footprint>Connectors:GS3</footprint>
       <libsource lib="conn" part="GS3"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>598060CE</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Aloes_Logo</value>
+      <footprint>Aloes:Aloes_mini</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59D60D96</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>OSHW_Logo</value>
+      <footprint>Symbols:OSHW-Logo_5.7x6mm_SilkScreen</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59D60EE7</tstamp>
     </comp>
   </components>
   <libparts>
@@ -170,8 +170,8 @@
         <pin num="7" name="GND" type="input"/>
       </pins>
     </libpart>
-    <libpart lib="conn" part="CONN_01X07">
-      <description>Connector, single row, 01x07, pin header</description>
+    <libpart lib="conn" part="CONN_01X01">
+      <description>Connector, single row, 01x01, pin header</description>
       <footprints>
         <fp>Pin_Header_Straight_1X*</fp>
         <fp>Pin_Header_Angled_1X*</fp>
@@ -180,7 +180,23 @@
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">CONN_01X07</field>
+        <field name="Value">CONN_01X01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X08">
+      <description>Connector, single row, 01x08, pin header</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X*</fp>
+        <fp>Pin_Header_Angled_1X*</fp>
+        <fp>Socket_Strip_Straight_1X*</fp>
+        <fp>Socket_Strip_Angled_1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X08</field>
       </fields>
       <pins>
         <pin num="1" name="P1" type="passive"/>
@@ -190,6 +206,7 @@
         <pin num="5" name="P5" type="passive"/>
         <pin num="6" name="P6" type="passive"/>
         <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="device" part="C_Small">
@@ -237,7 +254,7 @@
         <pin num="3" name="G3" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="TSL2561T_6P-3.8X2.6MM_" part="OPTICAL-TSL2561T(6P-3.8X2.6MM)">
+    <libpart lib="Cosmonode_ext_01-cache" part="OPTICAL-TSL2561T(6P-3.8X2.6MM)">
       <fields>
         <field name="Reference">U</field>
         <field name="Value">OPTICAL-TSL2561T(6P-3.8X2.6MM)</field>
@@ -297,116 +314,118 @@
     </libpart>
   </libparts>
   <libraries>
-    <library logical="conn">
-      <uri>/home/ed/Kicad/kicad-library/library/conn.lib</uri>
-    </library>
     <library logical="device">
       <uri>/home/ed/Kicad/kicad-library/library/device.lib</uri>
     </library>
-    <library logical="TSL2561T_6P-3.8X2.6MM_">
-      <uri>/home/ed/Kicad/library/TSL2561T_6P-3.8X2.6MM_.lib</uri>
-    </library>
-    <library logical="SI7020-A20-YM0R">
-      <uri>/home/ed/Kicad/library/SI7020-A20-YM0R.lib</uri>
+    <library logical="conn">
+      <uri>/home/ed/Kicad/kicad-library/library/conn.lib</uri>
     </library>
     <library logical="BMP180">
       <uri>/home/ed/Kicad/library/BMP180.lib</uri>
     </library>
+    <library logical="Cosmonode_ext_01-cache">
+      <uri>/home/ed/Kicad/Cosmonode_full/Cosmonode_ext01/Cosmonode_ext_01-cache.lib</uri>
+    </library>
+    <library logical="SI7020-A20-YM0R">
+      <uri>/home/ed/Kicad/library/SI7020-A20-YM0R.lib</uri>
+    </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(C3-Pad1)">
-      <node ref="U3" pin="5"/>
-      <node ref="J9" pin="2"/>
-      <node ref="C3" pin="1"/>
+    <net code="1" name="Net-(C1-Pad2)">
+      <node ref="U3" pin="2"/>
+      <node ref="U2" pin="7"/>
+      <node ref="U1" pin="3"/>
+      <node ref="C3" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="J8" pin="2"/>
+      <node ref="C4" pin="2"/>
     </net>
-    <net code="2" name="Net-(C2-Pad1)">
-      <node ref="U2" pin="2"/>
-      <node ref="U2" pin="3"/>
-      <node ref="J7" pin="2"/>
-      <node ref="C2" pin="1"/>
-      <node ref="C4" pin="1"/>
+    <net code="2" name="+3V3">
+      <node ref="J5" pin="2"/>
+      <node ref="J5" pin="3"/>
+      <node ref="J9" pin="1"/>
     </net>
-    <net code="3" name="Net-(C1-Pad1)">
-      <node ref="J2" pin="2"/>
-      <node ref="U1" pin="1"/>
-      <node ref="C1" pin="1"/>
-      <node ref="J1" pin="1"/>
-    </net>
-    <net code="4" name="Net-(J1-Pad2)">
-      <node ref="U1" pin="2"/>
+    <net code="3" name="Net-(J1-Pad2)">
       <node ref="R1" pin="1"/>
       <node ref="J1" pin="2"/>
+      <node ref="U1" pin="2"/>
     </net>
-    <net code="5" name="/BAT+">
-      <node ref="J5" pin="1"/>
+    <net code="4" name="Net-(J4-Pad1)">
+      <node ref="J4" pin="1"/>
     </net>
-    <net code="6" name="/A1">
-      <node ref="J3" pin="7"/>
+    <net code="5" name="Net-(J6-Pad1)">
+      <node ref="J6" pin="1"/>
     </net>
-    <net code="7" name="/A0">
-      <node ref="J3" pin="6"/>
+    <net code="6" name="/A7">
+      <node ref="J5" pin="8"/>
     </net>
-    <net code="8" name="Net-(U3-Pad7)">
+    <net code="7" name="/A6">
+      <node ref="J3" pin="8"/>
+    </net>
+    <net code="8" name="/D5">
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="9" name="/D7">
+      <node ref="J3" pin="5"/>
+    </net>
+    <net code="10" name="Net-(U3-Pad7)">
       <node ref="U3" pin="7"/>
     </net>
-    <net code="9" name="GND">
+    <net code="11" name="GND">
       <node ref="J5" pin="5"/>
-      <node ref="J8" pin="1"/>
       <node ref="J5" pin="4"/>
+      <node ref="J8" pin="1"/>
     </net>
-    <net code="10" name="+3V3">
-      <node ref="J7" pin="1"/>
-      <node ref="J5" pin="2"/>
-      <node ref="J9" pin="1"/>
-      <node ref="J2" pin="1"/>
-      <node ref="J5" pin="3"/>
+    <net code="12" name="/BAT+">
+      <node ref="J5" pin="1"/>
     </net>
-    <net code="11" name="Net-(C1-Pad2)">
-      <node ref="C1" pin="2"/>
-      <node ref="R1" pin="2"/>
-      <node ref="U1" pin="3"/>
-      <node ref="C4" pin="2"/>
-      <node ref="C2" pin="2"/>
-      <node ref="C3" pin="2"/>
-      <node ref="J8" pin="2"/>
-      <node ref="U2" pin="7"/>
-      <node ref="U3" pin="2"/>
+    <net code="13" name="/A1">
+      <node ref="J3" pin="7"/>
     </net>
-    <net code="12" name="/A5">
-      <node ref="U1" pin="4"/>
-      <node ref="U3" pin="6"/>
+    <net code="14" name="/A0">
+      <node ref="J3" pin="6"/>
+    </net>
+    <net code="15" name="/A5">
       <node ref="J5" pin="7"/>
       <node ref="U2" pin="5"/>
+      <node ref="U1" pin="4"/>
+      <node ref="U3" pin="6"/>
     </net>
-    <net code="13" name="/A4">
+    <net code="16" name="/A4">
+      <node ref="J5" pin="6"/>
       <node ref="U1" pin="6"/>
       <node ref="U3" pin="1"/>
       <node ref="U2" pin="6"/>
-      <node ref="J5" pin="6"/>
     </net>
-    <net code="14" name="Net-(U3-Pad3)">
+    <net code="17" name="Net-(U3-Pad3)">
       <node ref="U3" pin="3"/>
     </net>
-    <net code="15" name="Net-(U3-Pad4)">
+    <net code="18" name="Net-(U3-Pad4)">
       <node ref="U3" pin="4"/>
     </net>
-    <net code="16" name="/D4">
+    <net code="19" name="/D4">
       <node ref="J3" pin="2"/>
       <node ref="J9" pin="3"/>
     </net>
-    <net code="17" name="/D5">
-      <node ref="J3" pin="3"/>
-      <node ref="J2" pin="3"/>
-    </net>
-    <net code="18" name="/D6">
+    <net code="20" name="/D6">
       <node ref="J8" pin="3"/>
       <node ref="J3" pin="4"/>
     </net>
-    <net code="19" name="/D7">
-      <node ref="J7" pin="3"/>
-      <node ref="J3" pin="5"/>
+    <net code="21" name="Net-(C1-Pad1)">
+      <node ref="U3" pin="5"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="U2" pin="2"/>
+      <node ref="J9" pin="2"/>
+      <node ref="U2" pin="3"/>
+      <node ref="U1" pin="1"/>
     </net>
-    <net code="20" name="/D3">
+    <net code="22" name="/D3">
       <node ref="J3" pin="1"/>
       <node ref="U1" pin="5"/>
     </net>

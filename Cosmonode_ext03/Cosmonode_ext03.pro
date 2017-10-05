@@ -1,4 +1,4 @@
-update=mer. 04 oct. 2017 00:40:32 CEST
+update=jeu. 05 oct. 2017 12:33:02 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -64,3 +64,13 @@ LibName34=BSS138
 LibName35=XC6206P302MR_SOT23_
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
