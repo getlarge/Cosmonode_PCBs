@@ -34,3 +34,4 @@ Reference, Value, Footprint, Datasheet, Price, MF, Description, Package, MP
 "J10","WEEE_Logo","Symbols:WEEE-Logo_4.2x6mm_SilkScreen",""
 "J11","Aloes_Logo","Aloes:Aloes",""
 "J12","Aloes_mini_Logo","Aloes:Aloes_mini",""
+"J7","Kicad_Logo","Symbols:KiCad-Logo2_6mm_SilkScreen",""

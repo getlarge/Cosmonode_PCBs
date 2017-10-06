@@ -1243,4 +1243,15 @@ AREF
 Wire Wire Line
 	1550 1750 1550 1650
 Connection ~ 1550 1750
+$Comp
+L CONN_01X01 J7
+U 1 1 59D61A7D
+P 2050 6950
+F 0 "J7" H 2050 7050 50  0000 C CNN
+F 1 "Kicad_Logo" V 2150 6950 50  0000 C CNN
+F 2 "Symbols:KiCad-Logo2_6mm_SilkScreen" H 2050 6950 50  0001 C CNN
+F 3 "" H 2050 6950 50  0001 C CNN
+	1    2050 6950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
