@@ -1,4 +1,4 @@
-update=lun. 02 oct. 2017 11:40:29 CEST
+update=sam. 28 oct. 2017 18:57:19 CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -23,16 +23,6 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=/home/ed/Kicad/kicad-library/library;/home/ed/Kicad/library
@@ -234,5 +224,24 @@ LibName194=INAIR4
 LibName195=INAIR9
 LibName196=WIRELESS-XY-FST
 LibName197=Aloes
+LibName198=SX1278
+LibName199=rn2483
+LibName200=MCP73831T-2ATI_OT
+LibName201=sma
+LibName202=sma_through
+LibName203=BSS123-7-F
+LibName204=BSS138
+LibName205=BSS123
+LibName206=coax
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [general]
 version=1

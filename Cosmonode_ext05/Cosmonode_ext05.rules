@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 587)
+    (start_pass_no 1191)
     (layer_rule F.Cu
       (active on)
       (preferred_direction vertical)
@@ -63,11 +63,12 @@
     )
   )
   (class "kicad_default"
-    GND "Net-(C1-Pad1)" VCC "Net-(D1-Pad1)" "Net-(D2-Pad1)" "Net-(J1-Pad2)" "Net-(J1-Pad3)" "/USB_P"
-    "/USB_N" "Net-(J1-Pad7)" "Net-(J1-Pad8)" "Net-(J1-Pad9)" "Net-(J1-Pad10)" "Net-(J1-Pad11)" "Net-(J1-Pad12)" "Net-(J1-Pad14)"
-    "Net-(J1-Pad15)" "Net-(J3-Pad6)" "Net-(J3-Pad4)" /BAT+ /A4 /A5 /A7 /D3
-    /D4 /D5 /D6 /D7 /A0 /A1 /A6 /MOSI
-    "Net-(J6-Pad3)" /RST /SCK /MISO /RX /TX "Net-(J1-Pad13)" /AREF
+    GND "/USB_P" "/USB_N" "Net-(J1-Pad7)" "Net-(J1-Pad8)" "Net-(J1-Pad9)" "Net-(J1-Pad10)" "Net-(J1-Pad11)"
+    "Net-(J1-Pad12)" "Net-(J1-Pad14)" "Net-(J1-Pad15)" "Net-(J3-Pad6)" "Net-(J3-Pad4)" "Net-(J6-Pad3)" +5V +3V3
+    "Net-(C4-Pad1)" "Net-(D1-Pad2)" RX "Net-(D2-Pad2)" TX "Net-(D3-Pad1)" DTR MOSI
+    RST SCK MISO "Net-(D4-Pad1)" +BATT D5 D6 D7
+    D8 D9 "Net-(J5-Pad4)" A0 A1 A3 A4 A5
+    A6 A7 D2 D3 D4
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

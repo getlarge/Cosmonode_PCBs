@@ -1,6 +1,6 @@
 Reference, Value, Footprint, Datasheet, Description, MF, Package, Price, MP
-"J3","CONN_01X08","Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm",""
-"J4","CONN_01X08","Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm",""
+"J3","CONN_01X08","Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm",""
+"J4","CONN_01X08","Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm",""
 "J1","CONN_01X04","Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight",""
 "C1","100nF","Capacitors_SMD:C_0603_HandSoldering",""
 "C4","100nF","Capacitors_SMD:C_0603_HandSoldering",""
@@ -19,3 +19,4 @@ Reference, Value, Footprint, Datasheet, Description, MF, Package, Price, MP
 "J6","GS3","Connectors:GS3",""
 "J5","GS3","Connectors:GS3",""
 "J7","Aloes_Logo","Aloes:Aloes_mini",""
+"J8","OSHW_Logo","Symbols:OSHW-Logo_5.7x6mm_SilkScreen",""

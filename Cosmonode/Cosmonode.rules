@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 6019)
+    (start_pass_no 7528)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -63,11 +63,16 @@
     )
   )
   (class "kicad_default"
-    GND /A3 +3V3 /RST /BAT+ /D3 /D4 /D5
-    /D6 /D7 /A0 /A1 /A4 /A5 /RX /TX
-    /MISO /MOSI /SCK /D8 /D10 /A2 "Net-(U1-Pad7)" "Net-(U1-Pad8)"
-    /D9 /A6 /A7 /D2 "Net-(U2-Pad3)" "Net-(U2-Pad4)" "Net-(U2-Pad5)" /ANT
-    "Net-(U2-Pad11)" "Net-(U3-Pad8)" "/VCC_NRF24" "/VCC_RFM69" /AREF
+    GND +3V3 "Net-(U1-Pad7)" "Net-(U1-Pad8)" /AREF RST DTR VDD
+    A3 +BATT "Net-(D3-Pad1)" "Net-(D3-Pad2)" A0 A1 A4 A5
+    A6 A7 RX D5 D6 D7 D8 D9
+    "Net-(J3-Pad1)" "Net-(J8-Pad2)" "Net-(J8-Pad4)" "Net-(J8-Pad3)" TX "/RADIO_RESET" D10 A2
+    "Net-(R11-Pad2)" D3 D4 MOSI MISO SCK D2 "Net-(U3-Pad46)"
+    "Net-(U3-Pad45)" "Net-(U3-Pad44)" "Net-(U3-Pad43)" "Net-(U3-Pad42)" "Net-(U3-Pad40)" "Net-(U3-Pad39)" "Net-(U3-Pad38)" "Net-(U3-Pad37)"
+    "Net-(U3-Pad36)" "Net-(U3-Pad35)" "Net-(U3-Pad31)" "Net-(U3-Pad30)" "Net-(U3-Pad29)" "Net-(U3-Pad25)" "Net-(U3-Pad19)" "Net-(U3-Pad18)"
+    "Net-(U3-Pad17)" "Net-(U3-Pad16)" "Net-(U3-Pad15)" "Net-(U3-Pad14)" "Net-(U3-Pad13)" "Net-(U3-Pad10)" "Net-(U3-Pad9)" "Net-(U3-Pad5)"
+    "Net-(U3-Pad4)" "Net-(U3-Pad3)" "Net-(U3-Pad2)" "Net-(D4-Pad2)" "Net-(D5-Pad2)" "Net-(J9-Pad1)" "Net-(J14-Pad1)" "Net-(C4-Pad1)"
+    "Net-(P1-Pad1)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

@@ -9,3 +9,4 @@ ext04 : PT100 3 wire sensor
 ext05 : ISP header + micro USB to TTL
 ext06 : pH Sensor - BNC probe
 ext07 : CO2 - MHZ19 sensor
+ext08 : ProtoBoard

@@ -21,12 +21,11 @@
       )
     )
     (boundary
-      (path pcb 0  166370 -102870  163830 -105410  163830 -135890  166370 -138430
-            186690 -138430  187325 -138430  187325 -102870  186690 -102870
-            166370 -102870  166370 -102870)
+      (path pcb 0  163830 -106045  163830 -135255  166370 -137795  187325 -137795
+            187325 -103505  166370 -103505  163830 -106045  163830 -106045)
     )
-    (plane "Net-(C1-Pad2)" (polygon B.Cu 0  187325 -138430  166370 -138430  163830 -135890  163830 -105410
-            166370 -102870  187325 -102870))
+    (plane "Net-(C1-Pad2)" (polygon B.Cu 0  187325 -137795  166370 -137795  163830 -135255  163830 -106045
+            166370 -103505  187325 -103505))
     (via "Via[0-1]_600:400_um")
     (rule
       (width 250)
@@ -37,37 +36,37 @@
   )
   (placement
     (component Capacitors_SMD:C_0603_HandSoldering
-      (place C1 174625 -113030 front 90 (PN 100nF))
-      (place C2 175895 -123825 front 90 (PN 100nF))
-      (place C3 184150 -113030 front 90 (PN 100nF))
-      (place C4 172085 -123825 front 90 (PN 100nF))
+      (place C1 168275 -112395 front 90 (PN 100nF))
+      (place C2 177800 -119380 front 90 (PN 100nF))
+      (place C3 180975 -112395 front 90 (PN 100nF))
+      (place C4 173990 -119380 front 90 (PN 100nF))
     )
     (component Connectors:GS2
-      (place J1 167005 -117475 front 90 (PN GS2))
+      (place J1 165735 -124460 front 90 (PN GS2))
     )
     (component Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm
-      (place J3 167640 -135890 back 90 (PN CONN_01X08))
-      (place J5 167640 -105410 back 90 (PN CONN_01X08))
+      (place J3 167640 -135255 back 90 (PN CONN_01X08))
+      (place J5 167640 -106045 back 90 (PN CONN_01X08))
     )
     (component Aloes:Aloes_mini
-      (place J4 167640 -130810 front 90 (PN Aloes_Logo))
+      (place J4 167640 -128905 front 90 (PN Aloes_Logo))
       (place J6 168275 -111125 back 90 (PN OSHW_Logo))
     )
     (component Connectors:GS3
-      (place J8 184785 -122555 front 0 (PN GS3))
-      (place J9 180340 -122555 front 0 (PN GS3))
+      (place J8 184785 -128270 front 0 (PN GS3))
+      (place J9 180340 -128270 front 0 (PN GS3))
     )
     (component Resistors_SMD:R_0603_HandSoldering
-      (place R1 172085 -117475 front 0 (PN 4.7k))
+      (place R1 172085 -124460 front 0 (PN 4.7k))
     )
     (component "TSL2561T:TMB6-1.55-3.8X2.6MM"
-      (place U1 170180 -113030 front 90 (PN "TSL2561T(6P-3.8X2.6MM)"))
+      (place U1 168275 -119380 front 90 (PN "TSL2561T(6P-3.8X2.6MM)"))
     )
     (component BMP180:BMP180
-      (place U2 167640 -123825 front 180 (PN BMP180))
+      (place U2 183515 -119380 front 180 (PN BMP180))
     )
     (component "SI7020-A20-YM0R:SON100P300X300X80-7N"
-      (place U3 179705 -113030 front 0 (PN "SI7020-A20-YM0R"))
+      (place U3 174625 -112395 front 0 (PN "SI7020-A20-YM0R"))
     )
   )
   (library

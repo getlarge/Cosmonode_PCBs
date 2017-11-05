@@ -1,4 +1,4 @@
-update=mer. 04 oct. 2017 00:26:56 CEST
+update=sam. 28 oct. 2017 19:33:52 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -149,6 +149,7 @@ LibName119=TL431ACDBZR
 LibName120=TSL2561T_6P-3.8X2.6MM_
 LibName121=wemos_mini
 LibName122=XC6206P302MR_SOT23_
+LibName123=XC6206P302MR
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
