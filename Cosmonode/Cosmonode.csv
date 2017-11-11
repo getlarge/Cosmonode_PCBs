@@ -1,31 +1,53 @@
-Reference, Value, Footprint, Datasheet, Price, MF, Description, Package, MP
-U1,ATMEGA328P-AU,Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm,,,,,,
-C4,100nF,Capacitors_SMD:C_0603_HandSoldering,,,,,,
-C2,100nF,Capacitors_SMD:C_0603_HandSoldering,,,,,,
-C1,100nF,Capacitors_SMD:C_0603_HandSoldering,,,,,,
-C6,100nF,Capacitors_SMD:C_0603_HandSoldering,,,,,,
-R5,10k,Resistors_SMD:R_0603_HandSoldering,,,,,,
-R3,10k,Resistors_SMD:R_0603_HandSoldering,,,,,,
-R1,1M,Resistors_SMD:R_0603_HandSoldering,,,,,,
-R2,470k,Resistors_SMD:R_0603_HandSoldering,,,,,,
-R4,10k,Resistors_SMD:R_0603_HandSoldering,,,,,,
-C9,47uF,Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand,,,,,,
-C10,4.7uF,Capacitors_SMD:C_0603_HandSoldering,,,,,,
-C12,100nF,Capacitors_SMD:C_0603_HandSoldering,,,,,,
-R14,100k,Resistors_SMD:R_0603_HandSoldering,,,,,,
-U3,M25P40,Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm,Unavailable,0.28 USD,Micron,NOR Flash Serial-SPI 2.5V/3.3V 4Mbit 512K x 8bit 8ns 8-Pin SO N T/R,SO-8 Micron,M25P40-VMN6TPB
-U4,XC6206P332MR,TO_SOT_Packages_SMD:TSOT-23,Good,0.58 USD,Torex,SMD PMIC%3B LDO%3B Vin 6V%3B 3.0V%3B 200mA%3B Without En%3B 1-Ch,SOT-23-3 Torex,XC6206P302MR
-U6,ATSHA204,TO_SOT_Packages_SMD:TSOT-23,Unavailable,None,Microchip,Crypto Authentication%2C Sot-23-3,SOT-23-3 Microchip,ATSHA204-TSU-T
-R10,1k,Resistors_SMD:R_0603_HandSoldering,,,,,,
-R11,1k,Resistors_SMD:R_0603_HandSoldering,,,,,,
-C7,47uF,Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand,,,,,,
-R13,0,Resistors_SMD:R_0603_HandSoldering,,,,,,
-SW1,SW_DIP_x01,w_switch:smd_push2,,,,,,
-Y2,Crystal_GND2,SMD-RESONATOR-8MHZ-33PF-0.1__3P-3.2X1.3MM_:X3-SMD-3.6X1.3X0.8MM,,,,,,
-J1,CONN_01X07,Socket_Strips:Socket_Strip_Straight_1x07_Pitch2.54mm,,,,,,
-J2,CONN_01X07,Socket_Strips:Socket_Strip_Straight_1x07_Pitch2.54mm,,,,,,
-J4,CONN_01X01,Symbols:OSHW-Logo2_7.3x6mm_SilkScreen,,,,,,
-MK1,Mounting_Hole,Mounting_Holes:MountingHole_2.2mm_M2_ISO14580,,,,,,
-U2,RFM69CW,w_rf_modules:RFM12B_SMD,DOCUMENTATION,,,,,
-J3,CONN_01X02,Connectors_JST:JST_PH_B2B-PH-K_02x2.00mm_Straight,,,,,,
-J5,CONN_01X06,Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm,,,,,,
+Reference, Value, Footprint, Datasheet, Price, MF, Description, Package, MP, Availability
+"U1","ATMEGA328P-AU","Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm",""
+"C2","100nF","Capacitors_SMD:C_0603_HandSoldering",""
+"C1","100nF","Capacitors_SMD:C_0603_HandSoldering",""
+"C7","100nF","Capacitors_SMD:C_0603_HandSoldering",""
+"C3","100nF","Capacitors_SMD:C_0603_HandSoldering",""
+"R3","10k","Resistors_SMD:R_0603_HandSoldering",""
+"R1","10k","Resistors_SMD:R_0603_HandSoldering",""
+"R8","1M","Resistors_SMD:R_0603_HandSoldering",""
+"R9","470k","Resistors_SMD:R_0603_HandSoldering",""
+"R2","10k","Resistors_SMD:R_0603_HandSoldering",""
+"C5","47uF","Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand",""
+"C6","4.7uF","Capacitors_SMD:C_0603_HandSoldering",""
+"C8","100nF","Capacitors_SMD:C_0603_HandSoldering",""
+"R7","100k","Resistors_SMD:R_0603_HandSoldering",""
+"U4","M25P40","Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm","Unavailable","0.28 USD","Micron","NOR Flash Serial-SPI 2.5V/3.3V 4Mbit 512K x 8bit 8ns 8-Pin SO N T/R","SO-8 Micron","M25P40-VMN6TPB",""
+"U5","XC6206P332MR","TO_SOT_Packages_SMD:TSOT-23","Good","0.58 USD","Torex","SMD PMIC%3B LDO%3B Vin 6V%3B 3.0V%3B 200mA%3B Without En%3B 1-Ch","SOT-23-3 Torex","XC6206P302MR",""
+"U6","ATSHA204","TO_SOT_Packages_SMD:TSOT-23","Unavailable","None","Microchip","Crypto Authentication%2C Sot-23-3","SOT-23-3 Microchip","ATSHA204-TSU-T",""
+"R4","1k","Resistors_SMD:R_0603_HandSoldering",""
+"R5","1k","Resistors_SMD:R_0603_HandSoldering",""
+"C4","47uF","Capacitors_Tantalum_SMD:CP_Tantalum_Case-A_EIA-3216-18_Hand",""
+"R6","0","Resistors_SMD:R_0603_HandSoldering",""
+"SW1","SW_DIP_x01","w_switch:smd_push2",""
+"Y1","Crystal_GND2","SMD-RESONATOR-8MHZ-33PF:X3-SMD-3.6X1.3X0.8MM",""
+"J1","CONN_01X12","Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm",""
+"J2","CONN_01X12","Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm",""
+"J4","OSHW","Symbols:OSHW-Logo_7.5x8mm_Copper",""
+"MK1","Mounting_Hole","Mounting_Holes:MountingHole_2.2mm_M2_ISO14580",""
+"U2","RFM69CW","w_rf_modules:RFM12B_SMD","DOCUMENTATION"
+"J5","CONN_01X02","Connectors_JST:JST_PH_B2B-PH-K_02x2.00mm_Straight",""
+"J10","WEEE_Logo","Symbols:WEEE-Logo_4.2x6mm_SilkScreen",""
+"J11","Aloes_Logo","Aloes:Aloes",""
+"J12","Aloes_mini_Logo","Aloes:Aloes_mini",""
+"U3","RN2483","RN2483:RN2483",""
+"U7","MCP73811T-420I/OT","TO_SOT_Packages_SMD:SOT-23-5_HandSoldering",""
+"J3","GS2","Connectors:GS2",""
+"D1","MBR0520","Diodes_SMD:D_SOD-123",""
+"D3","LED","LEDs:LED_0603_HandSoldering",""
+"R12","1k","Resistors_SMD:R_0603_HandSoldering",""
+"D2","MBR0520","Diodes_SMD:D_SOD-123",""
+"R11","R","Resistors_SMD:R_0603_HandSoldering",""
+"J13","CONN_01X05","Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm",""
+"Q1","BSS123","TO_SOT_Packages_SMD:TSOT-23","NXP Semiconductors","0.06 USD","","Small Signal FET [NXP] BSS123 Small Signal FET","SOT-23 NXP Semiconductors","BSS123","Unavailable"
+"R10","10k","Resistors_SMD:R_0603_HandSoldering",""
+"C9","100nF","Capacitors_SMD:C_0603_HandSoldering",""
+"J6","SMA_through","sma:EDGE_SMA_5",""
+"J8","USB_OTG","Connectors_USB:USB_Micro-B_Molex-105017-0001",""
+"R14","1k","Resistors_SMD:R_0603_HandSoldering",""
+"R13","1k","Resistors_SMD:R_0603_HandSoldering",""
+"D4","LED","LEDs:LED_0603_HandSoldering",""
+"D5","LED","LEDs:LED_0603_HandSoldering",""
+"J9","GS2","Connectors:GS2",""
+"J14","GS2","Connectors:GS2",""

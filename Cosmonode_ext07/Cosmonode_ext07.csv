@@ -1,0 +1,11 @@
+Reference, Value, Footprint, Datasheet, Description, MF, Package, Price, MP
+"J3","CONN_01X12","Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm",""
+"J4","CONN_01X12","Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm",""
+"U1","XC6206P502MR","TO_SOT_Packages_SMD:SOT-23_Handsoldering","Good","SMD PMIC%3B LDO%3B Vin 6V%3B 3.0V%3B 200mA%3B Without En%3B 1-Ch","Torex","SOT-23-3 Torex","0.58 USD","XC6206P302MR"
+"J6","GS3","Connectors:GS3",""
+"J5","GS3","Connectors:GS3",""
+"J7","Aloes_Logo","Aloes:Aloes_mini",""
+"J2","MH-Z19","MH-Z19:MH-Z19",""
+"J1","OSHW_Logo","Symbols:OSHW-Logo_5.7x6mm_SilkScreen",""
+"J8","CONN_01X04","",""
+"J9","CONN_01X05","",""
