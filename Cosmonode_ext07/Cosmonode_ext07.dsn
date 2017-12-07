@@ -3,7 +3,7 @@
     (string_quote ")
     (space_in_quoted_tokens on)
     (host_cad "KiCad's Pcbnew")
-    (host_version "4.0.7-e2-6376~58~ubuntu17.04.1")
+    (host_version "4.0.7-e2-6376~60~ubuntu17.10.1")
   )
   (resolution um 10)
   (unit um)
@@ -21,13 +21,12 @@
       )
     )
     (boundary
-      (path pcb 0  146685 -88900  144145 -91440  144145 -120650  146685 -123190
-            179070 -123190  181610 -120650  181610 -91440  179070 -88900
-            156845 -88900  146685 -88900  146685 -88900)
+      (path pcb 0  147955 -123190  145415 -120650  145415 -91440  147955 -88900
+            156845 -88900  177165 -88900  179705 -91440  179705 -120650
+            177165 -123190  147955 -123190  147955 -123190)
     )
-    (plane GND (polygon B.Cu 0  144145 -91440  144145 -120650  146685 -123190  179070 -123190
-            181610 -120650  181610 -91440  179070 -88900  146685 -88900
-            144145 -91440))
+    (plane "Net-(J6-Pad2)" (polygon B.Cu 0  179705 -91440  179705 -120650  177165 -123190  147955 -123190
+            145415 -120650  145415 -91440  147955 -88900  177165 -88900))
     (via "Via[0-1]_600:400_um")
     (rule
       (width 250)
@@ -39,7 +38,7 @@
   (placement
     (component "Symbols:OSHW-Logo_5.7x6mm_SilkScreen"
       (place J1 149225 -117475 back 90 (PN OSHW_Logo))
-      (place J7 147955 -116840 front 270 (PN Aloes_Logo))
+      (place J7 149860 -116205 front 270 (PN Aloes_Logo))
     )
     (component "MH-Z19:MH-Z19"
       (place J2 177165 -99060 front 180 (PN "MH-Z19"))
@@ -49,7 +48,7 @@
       (place J6 163830 -116840 front 270 (PN GS3))
     )
     (component "TO_SOT_Packages_SMD:SOT-23_Handsoldering"
-      (place U1 178435 -116840 front 180 (PN XC6206P502MR))
+      (place U1 176530 -116205 front 180 (PN XC6206P502MR))
     )
     (component Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm
       (place J3 148590 -91440 back 90 (PN CONN_01X12))
@@ -297,11 +296,10 @@
     (net "Net-(J6-Pad2)"
       (pins J6-2)
     )
-    (class kicad_default "" +3V3 +5V +BATT /A0 /A1 /A4 /A5 /A6 /AREF /BAT+
-      /D3 /D4 /D5 /D6 /D7 /MISO /MOSI /RST /RX /SCK /TX A0 A1 A3 A4 A5 A6
-      A7 D2 D3 D4 D5 D6 D7 D8 D9 GND MISO MOSI "Net-(J2-Pad1)" "Net-(J2-Pad4)"
-      "Net-(J2-Pad5)" "Net-(J2-Pad7)" "Net-(J2-Pad8)" "Net-(J2-Pad9)" "Net-(J5-Pad2)"
-      "Net-(J6-Pad2)" RST RX SCK TX
+    (class kicad_default "" +3V3 +5V +BATT A0 A1 A3 A4 A5 A6 A7 D2 D3 D4 D5
+      D6 D7 D8 D9 GND MISO MOSI "Net-(J2-Pad1)" "Net-(J2-Pad4)" "Net-(J2-Pad5)"
+      "Net-(J2-Pad8)" "Net-(J2-Pad9)" "Net-(J5-Pad2)" "Net-(J6-Pad2)" RST
+      RX SCK TX
       (circuit
         (use_via Via[0-1]_600:400_um)
       )

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/ed/Kicad/Cosmonode_full/Cosmonode_ext03/Cosmonode_ext03.sch</source>
-    <date>jeu. 05 oct. 2017 12:33:05 CEST</date>
-    <tool>Eeschema 4.0.7-e2-6376~58~ubuntu17.04.1</tool>
+    <source>/home/ed/Kicad/Cosmonode_full/Cosmonode_ext08/Cosmonode_ext08.sch</source>
+    <date>mar. 28 nov. 2017 14:47:34 CET</date>
+    <tool>Eeschema 4.0.7-e2-6376~60~ubuntu17.10.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>Cosmonode_ext_02</title>
+        <title>Proto Board</title>
         <company/>
         <rev/>
-        <date>2017-08-01</date>
-        <source>Cosmonode_ext03.sch</source>
+        <date>2017-11-02</date>
+        <source>Cosmonode_ext08.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -19,45 +19,17 @@
     </sheet>
   </design>
   <components>
-    <comp ref="J5">
-      <value>CONN_01X08</value>
-      <footprint>Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm</footprint>
-      <libsource lib="conn" part="CONN_01X08"/>
+    <comp ref="J3">
+      <value>CONN_01X12</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X12"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>598047BC</tstamp>
     </comp>
-    <comp ref="J1">
-      <value>CONN_01X04</value>
-      <footprint>Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight</footprint>
-      <libsource lib="conn" part="CONN_01X04"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>59809B24</tstamp>
-    </comp>
-    <comp ref="J3">
-      <value>GS3</value>
-      <footprint>Connectors:GS3</footprint>
-      <libsource lib="conn" part="GS3"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5980CC8F</tstamp>
-    </comp>
-    <comp ref="J2">
-      <value>GS3</value>
-      <footprint>Connectors:GS3</footprint>
-      <libsource lib="conn" part="GS3"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5980D5B2</tstamp>
-    </comp>
     <comp ref="J4">
-      <value>CONN_01X04</value>
-      <footprint>Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight</footprint>
-      <libsource lib="conn" part="CONN_01X04"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>59CF53E5</tstamp>
-    </comp>
-    <comp ref="J6">
-      <value>CONN_01X08</value>
-      <footprint>Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm</footprint>
-      <libsource lib="conn" part="CONN_01X08"/>
+      <value>CONN_01X12</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X12"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>598047EF</tstamp>
     </comp>
@@ -66,14 +38,77 @@
       <footprint>Aloes:Aloes_mini</footprint>
       <libsource lib="conn" part="CONN_01X01"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>59D34FA9</tstamp>
+      <tstamp>59D33BEF</tstamp>
     </comp>
-    <comp ref="J8">
+    <comp ref="J1">
       <value>OSHW_Logo</value>
       <footprint>Symbols:OSHW-Logo_5.7x6mm_SilkScreen</footprint>
       <libsource lib="conn" part="CONN_01X01"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>59D42085</tstamp>
+      <tstamp>59D41889</tstamp>
+    </comp>
+    <comp ref="J10">
+      <value>CONN_01X03</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59FB7F22</tstamp>
+    </comp>
+    <comp ref="J11">
+      <value>CONN_01X03</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59FB800D</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>CONN_01X04</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59FB808F</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>CONN_01X04</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59FB8202</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>CONN_01X03</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59FB82C8</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>CONN_01X03</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59FB83D6</tstamp>
+    </comp>
+    <comp ref="J13">
+      <value>CONN_02X09</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_2x09_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_02X09"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59FB92EE</tstamp>
+    </comp>
+    <comp ref="J12">
+      <value>CONN_02X03</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_02X03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59FB7CFE</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>CONN_01X04</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1D4862</tstamp>
     </comp>
   </components>
   <libparts>
@@ -91,6 +126,24 @@
       </fields>
       <pins>
         <pin num="1" name="P1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X03">
+      <description>Connector, single row, 01x03, pin header</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X*</fp>
+        <fp>Pin_Header_Angled_1X*</fp>
+        <fp>Socket_Strip_Straight_1X*</fp>
+        <fp>Socket_Strip_Angled_1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="conn" part="CONN_01X04">
@@ -112,8 +165,8 @@
         <pin num="4" name="P4" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="conn" part="CONN_01X08">
-      <description>Connector, single row, 01x08, pin header</description>
+    <libpart lib="conn" part="CONN_01X12">
+      <description>Connector, single row, 01x12, pin header</description>
       <footprints>
         <fp>Pin_Header_Straight_1X*</fp>
         <fp>Pin_Header_Angled_1X*</fp>
@@ -122,7 +175,7 @@
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">CONN_01X08</field>
+        <field name="Value">CONN_01X12</field>
       </fields>
       <pins>
         <pin num="1" name="P1" type="passive"/>
@@ -133,22 +186,65 @@
         <pin num="6" name="P6" type="passive"/>
         <pin num="7" name="P7" type="passive"/>
         <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="conn" part="GS3">
-      <description>3-pin jumper/solder bridge</description>
+    <libpart lib="conn" part="CONN_02X03">
+      <description>Connector, double row, 02x03, pin header</description>
       <footprints>
-        <fp>GS*</fp>
+        <fp>Pin_Header_Straight_2X*</fp>
+        <fp>Pin_Header_Angled_2X*</fp>
+        <fp>Socket_Strip_Straight_2X*</fp>
+        <fp>Socket_Strip_Angled_2X*</fp>
+        <fp>IDC_Header_Straight_*</fp>
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">GS3</field>
-        <field name="Footprint">Connectors:GS3</field>
+        <field name="Value">CONN_02X03</field>
       </fields>
       <pins>
-        <pin num="1" name="G1" type="passive"/>
-        <pin num="2" name="G2" type="passive"/>
-        <pin num="3" name="G3" type="passive"/>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_02X09">
+      <description>Connector, double row, 02x09, pin header</description>
+      <footprints>
+        <fp>Pin_Header_Straight_2X*</fp>
+        <fp>Pin_Header_Angled_2X*</fp>
+        <fp>Socket_Strip_Straight_2X*</fp>
+        <fp>Socket_Strip_Angled_2X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_02X09</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="P13" type="passive"/>
+        <pin num="14" name="P14" type="passive"/>
+        <pin num="15" name="P15" type="passive"/>
+        <pin num="16" name="P16" type="passive"/>
+        <pin num="17" name="P17" type="passive"/>
+        <pin num="18" name="P18" type="passive"/>
       </pins>
     </libpart>
   </libparts>
@@ -158,73 +254,167 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(J1-Pad4)">
+    <net code="1" name="Net-(J13-Pad12)">
+      <node ref="J13" pin="12"/>
+    </net>
+    <net code="2" name="D5">
       <node ref="J4" pin="4"/>
-      <node ref="J2" pin="2"/>
-      <node ref="J1" pin="4"/>
     </net>
-    <net code="2" name="+3V3">
-      <node ref="J6" pin="2"/>
-      <node ref="J6" pin="3"/>
-      <node ref="J2" pin="3"/>
+    <net code="3" name="Net-(J13-Pad1)">
+      <node ref="J13" pin="1"/>
     </net>
-    <net code="3" name="GND">
-      <node ref="J3" pin="3"/>
-      <node ref="J6" pin="4"/>
-      <node ref="J6" pin="5"/>
+    <net code="4" name="Net-(J13-Pad2)">
+      <node ref="J13" pin="2"/>
     </net>
-    <net code="4" name="/A6">
-      <node ref="J5" pin="8"/>
+    <net code="5" name="Net-(J13-Pad3)">
+      <node ref="J13" pin="3"/>
     </net>
-    <net code="5" name="/A7">
-      <node ref="J6" pin="8"/>
+    <net code="6" name="Net-(J13-Pad4)">
+      <node ref="J13" pin="4"/>
     </net>
-    <net code="6" name="/A4">
+    <net code="7" name="Net-(J13-Pad5)">
+      <node ref="J13" pin="5"/>
+    </net>
+    <net code="8" name="Net-(J13-Pad6)">
+      <node ref="J13" pin="6"/>
+    </net>
+    <net code="9" name="Net-(J13-Pad7)">
+      <node ref="J13" pin="7"/>
+    </net>
+    <net code="10" name="Net-(J13-Pad8)">
+      <node ref="J13" pin="8"/>
+    </net>
+    <net code="11" name="Net-(J13-Pad9)">
+      <node ref="J13" pin="9"/>
+    </net>
+    <net code="12" name="Net-(J13-Pad10)">
+      <node ref="J13" pin="10"/>
+    </net>
+    <net code="13" name="Net-(J13-Pad11)">
+      <node ref="J13" pin="11"/>
+    </net>
+    <net code="14" name="Net-(J13-Pad13)">
+      <node ref="J13" pin="13"/>
+    </net>
+    <net code="15" name="Net-(J13-Pad14)">
+      <node ref="J13" pin="14"/>
+    </net>
+    <net code="16" name="Net-(J13-Pad15)">
+      <node ref="J13" pin="15"/>
+    </net>
+    <net code="17" name="Net-(J13-Pad16)">
+      <node ref="J13" pin="16"/>
+    </net>
+    <net code="18" name="Net-(J13-Pad17)">
+      <node ref="J13" pin="17"/>
+    </net>
+    <net code="19" name="Net-(J13-Pad18)">
+      <node ref="J13" pin="18"/>
+    </net>
+    <net code="20" name="GND">
+      <node ref="J2" pin="4"/>
+      <node ref="J9" pin="4"/>
+      <node ref="J11" pin="3"/>
+      <node ref="J10" pin="3"/>
       <node ref="J4" pin="3"/>
-      <node ref="J6" pin="6"/>
-      <node ref="J1" pin="3"/>
+      <node ref="J12" pin="2"/>
+      <node ref="J8" pin="4"/>
+      <node ref="J12" pin="4"/>
+      <node ref="J12" pin="6"/>
+      <node ref="J5" pin="3"/>
+      <node ref="J6" pin="3"/>
     </net>
-    <net code="7" name="/BAT+">
+    <net code="21" name="+3V3">
+      <node ref="J11" pin="1"/>
       <node ref="J6" pin="1"/>
-    </net>
-    <net code="8" name="Net-(J8-Pad1)">
+      <node ref="J9" pin="1"/>
+      <node ref="J10" pin="1"/>
+      <node ref="J5" pin="1"/>
+      <node ref="J4" pin="2"/>
+      <node ref="J2" pin="1"/>
       <node ref="J8" pin="1"/>
+      <node ref="J12" pin="5"/>
+      <node ref="J12" pin="3"/>
+      <node ref="J12" pin="1"/>
     </net>
-    <net code="9" name="Net-(J7-Pad1)">
-      <node ref="J7" pin="1"/>
-    </net>
-    <net code="10" name="/D4">
+    <net code="22" name="D4">
+      <node ref="J3" pin="12"/>
       <node ref="J5" pin="2"/>
     </net>
-    <net code="11" name="/D3">
-      <node ref="J5" pin="1"/>
+    <net code="23" name="D3">
+      <node ref="J3" pin="11"/>
+      <node ref="J6" pin="2"/>
     </net>
-    <net code="12" name="Net-(J1-Pad2)">
-      <node ref="J3" pin="2"/>
-      <node ref="J1" pin="2"/>
-      <node ref="J4" pin="2"/>
+    <net code="24" name="A7">
+      <node ref="J3" pin="7"/>
     </net>
-    <net code="13" name="/A1">
-      <node ref="J5" pin="7"/>
+    <net code="25" name="A6">
+      <node ref="J3" pin="6"/>
     </net>
-    <net code="14" name="/A0">
-      <node ref="J5" pin="6"/>
+    <net code="26" name="A5">
+      <node ref="J3" pin="5"/>
+      <node ref="J2" pin="3"/>
+      <node ref="J8" pin="3"/>
     </net>
-    <net code="15" name="/D7">
-      <node ref="J5" pin="5"/>
+    <net code="27" name="Net-(J7-Pad1)">
+      <node ref="J7" pin="1"/>
     </net>
-    <net code="16" name="/D6">
-      <node ref="J3" pin="1"/>
-      <node ref="J5" pin="4"/>
+    <net code="28" name="TX">
+      <node ref="J3" pin="9"/>
     </net>
-    <net code="17" name="/D5">
-      <node ref="J2" pin="1"/>
-      <node ref="J5" pin="3"/>
+    <net code="29" name="RX">
+      <node ref="J3" pin="8"/>
     </net>
-    <net code="18" name="/A5">
+    <net code="30" name="D9">
+      <node ref="J4" pin="8"/>
+    </net>
+    <net code="31" name="RST">
+      <node ref="J4" pin="9"/>
+    </net>
+    <net code="32" name="MOSI">
+      <node ref="J4" pin="10"/>
+    </net>
+    <net code="33" name="D2">
+      <node ref="J3" pin="10"/>
+    </net>
+    <net code="34" name="Net-(J1-Pad1)">
       <node ref="J1" pin="1"/>
+    </net>
+    <net code="35" name="+BATT">
       <node ref="J4" pin="1"/>
-      <node ref="J6" pin="7"/>
+    </net>
+    <net code="36" name="A3">
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="37" name="D8">
+      <node ref="J4" pin="7"/>
+    </net>
+    <net code="38" name="MISO">
+      <node ref="J4" pin="11"/>
+    </net>
+    <net code="39" name="SCK">
+      <node ref="J4" pin="12"/>
+    </net>
+    <net code="40" name="A1">
+      <node ref="J11" pin="2"/>
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="41" name="A0">
+      <node ref="J3" pin="1"/>
+      <node ref="J10" pin="2"/>
+    </net>
+    <net code="42" name="D6">
+      <node ref="J4" pin="5"/>
+      <node ref="J9" pin="2"/>
+    </net>
+    <net code="43" name="D7">
+      <node ref="J4" pin="6"/>
+      <node ref="J9" pin="3"/>
+    </net>
+    <net code="44" name="A4">
+      <node ref="J2" pin="2"/>
+      <node ref="J8" pin="2"/>
+      <node ref="J3" pin="4"/>
     </net>
   </nets>
 </export>

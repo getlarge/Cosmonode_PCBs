@@ -1,4 +1,4 @@
-Contains Kicad plan for the mother board, and 4 extensions.
+Contains Kicad plan for the mother board, and 8 extensions.
 
 Each directory has descriptive .png and .pdf files.
 

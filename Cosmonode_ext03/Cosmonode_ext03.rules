@@ -1,5 +1,5 @@
 
-(rules PCB Cosmonode_ext03
+(rules PCB Cosmonode_ext08
   (snap_angle 
     fortyfive_degree
   )
@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 219)
+    (start_pass_no 190)
     (layer_rule F.Cu
-      (active on)
-      (preferred_direction vertical)
-      (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.4)
-    )
-    (layer_rule B.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.7)
+      (against_preferred_direction_trace_costs 2.1)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.9)
     )
   )
   (rule
@@ -63,8 +63,12 @@
     )
   )
   (class "kicad_default"
-    "Net-(J1-Pad2)" /A5 /A4 "Net-(J1-Pad4)" /D5 +3V3 /D6 GND
-    /D3 /D4 /D7 /A0 /A1 /A6 /BAT+ /A7
+    GND +3V3 A1 A0 A3 A4 A5 A6
+    A7 RX TX D2 D3 D4 +BATT D5
+    D6 D7 D8 D9 RST MOSI MISO SCK
+    "Net-(J13-Pad1)" "Net-(J13-Pad2)" "Net-(J13-Pad3)" "Net-(J13-Pad4)" "Net-(J13-Pad5)" "Net-(J13-Pad6)" "Net-(J13-Pad7)" "Net-(J13-Pad8)"
+    "Net-(J13-Pad9)" "Net-(J13-Pad10)" "Net-(J13-Pad11)" "Net-(J13-Pad12)" "Net-(J13-Pad13)" "Net-(J13-Pad14)" "Net-(J13-Pad15)" "Net-(J13-Pad16)"
+    "Net-(J13-Pad17)" "Net-(J13-Pad18)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

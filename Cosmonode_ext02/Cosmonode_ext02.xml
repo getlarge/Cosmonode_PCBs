@@ -2,8 +2,8 @@
 <export version="D">
   <design>
     <source>/home/ed/Kicad/Cosmonode_full/Cosmonode_ext02/Cosmonode_ext02.sch</source>
-    <date>mar. 24 oct. 2017 10:19:02 CEST</date>
-    <tool>Eeschema 4.0.7-e2-6376~58~ubuntu17.04.1</tool>
+    <date>mer. 29 nov. 2017 12:37:15 CET</date>
+    <tool>Eeschema 4.0.7-e2-6376~60~ubuntu17.10.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Cosmonode_ext_02</title>
@@ -20,18 +20,11 @@
   </design>
   <components>
     <comp ref="J3">
-      <value>CONN_01X08</value>
-      <footprint>Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm</footprint>
-      <libsource lib="conn" part="CONN_01X08"/>
+      <value>CONN_01X12</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X12"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>598047BC</tstamp>
-    </comp>
-    <comp ref="J4">
-      <value>CONN_01X08</value>
-      <footprint>Socket_Strips:Socket_Strip_Straight_1x08_Pitch2.54mm</footprint>
-      <libsource lib="conn" part="CONN_01X08"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>598047EF</tstamp>
     </comp>
     <comp ref="J1">
       <value>CONN_01X04</value>
@@ -128,7 +121,7 @@
         <field name="Price">0.58 USD</field>
         <field name="MP">XC6206P302MR</field>
       </fields>
-      <libsource lib="Cosmonode_ext02-cache" part="PMIC-LDO-XC6206P302MR(SOT23)"/>
+      <libsource lib="XC6206P302MR_SOT23_" part="PMIC-LDO-XC6206P302MR(SOT23)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5980A599</tstamp>
     </comp>
@@ -173,6 +166,13 @@
       <libsource lib="conn" part="CONN_01X01"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>59D41B96</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>CONN_01X12</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X12"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>598047EF</tstamp>
     </comp>
   </components>
   <libparts>
@@ -232,8 +232,8 @@
         <pin num="4" name="P4" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="conn" part="CONN_01X08">
-      <description>Connector, single row, 01x08, pin header</description>
+    <libpart lib="conn" part="CONN_01X12">
+      <description>Connector, single row, 01x12, pin header</description>
       <footprints>
         <fp>Pin_Header_Straight_1X*</fp>
         <fp>Pin_Header_Angled_1X*</fp>
@@ -242,7 +242,7 @@
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">CONN_01X08</field>
+        <field name="Value">CONN_01X12</field>
       </fields>
       <pins>
         <pin num="1" name="P1" type="passive"/>
@@ -253,6 +253,10 @@
         <pin num="6" name="P6" type="passive"/>
         <pin num="7" name="P7" type="passive"/>
         <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="device" part="C_Small">
@@ -285,7 +289,7 @@
         <pin num="3" name="G3" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Cosmonode_ext02-cache" part="PMIC-LDO-XC6206P302MR(SOT23)">
+    <libpart lib="XC6206P302MR_SOT23_" part="PMIC-LDO-XC6206P302MR(SOT23)">
       <fields>
         <field name="Reference">U</field>
         <field name="Value">PMIC-LDO-XC6206P302MR(SOT23)</field>
@@ -316,129 +320,157 @@
     </libpart>
   </libparts>
   <libraries>
-    <library logical="transistors">
-      <uri>/home/ed/Kicad/kicad-library/library/transistors.lib</uri>
+    <library logical="switches">
+      <uri>/home/ed/Kicad/kicad-library/library/switches.lib</uri>
     </library>
     <library logical="device">
       <uri>/home/ed/Kicad/kicad-library/library/device.lib</uri>
     </library>
-    <library logical="switches">
-      <uri>/home/ed/Kicad/kicad-library/library/switches.lib</uri>
-    </library>
     <library logical="conn">
       <uri>/home/ed/Kicad/kicad-library/library/conn.lib</uri>
     </library>
-    <library logical="Cosmonode_ext02-cache">
-      <uri>/home/ed/Kicad/Cosmonode_full/Cosmonode_ext02/Cosmonode_ext02-cache.lib</uri>
+    <library logical="transistors">
+      <uri>/home/ed/Kicad/kicad-library/library/transistors.lib</uri>
+    </library>
+    <library logical="XC6206P302MR_SOT23_">
+      <uri>/home/ed/Kicad/library/XC6206P302MR_SOT23_.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="/D4_5V">
-      <node ref="C8" pin="1"/>
-      <node ref="Q2" pin="3"/>
-      <node ref="J2" pin="2"/>
-    </net>
-    <net code="2" name="+5V">
-      <node ref="J2" pin="1"/>
-      <node ref="C2" pin="1"/>
-      <node ref="C7" pin="1"/>
-      <node ref="C3" pin="1"/>
-      <node ref="C6" pin="1"/>
-      <node ref="J1" pin="1"/>
-      <node ref="U1" pin="2"/>
-    </net>
-    <net code="3" name="Net-(C5-Pad2)">
-      <node ref="C5" pin="2"/>
-      <node ref="J2" pin="4"/>
-      <node ref="SW2" pin="1"/>
-    </net>
-    <net code="4" name="/D5">
-      <node ref="J3" pin="3"/>
-      <node ref="J5" pin="1"/>
-    </net>
-    <net code="5" name="/D7">
-      <node ref="J3" pin="5"/>
-    </net>
-    <net code="6" name="+3V3">
-      <node ref="Q1" pin="1"/>
-      <node ref="Q2" pin="1"/>
-      <node ref="J5" pin="3"/>
+    <net code="1" name="GND">
+      <node ref="J6" pin="3"/>
       <node ref="J4" pin="3"/>
-      <node ref="J4" pin="2"/>
     </net>
-    <net code="7" name="/D6">
-      <node ref="J3" pin="4"/>
-      <node ref="J6" pin="1"/>
-    </net>
-    <net code="8" name="/A5">
-      <node ref="J4" pin="7"/>
-    </net>
-    <net code="9" name="Net-(J5-Pad2)">
+    <net code="2" name="Net-(J5-Pad2)">
       <node ref="U1" pin="3"/>
       <node ref="J5" pin="2"/>
     </net>
-    <net code="10" name="/A7">
-      <node ref="J4" pin="8"/>
-    </net>
-    <net code="11" name="/A6">
-      <node ref="J3" pin="8"/>
-    </net>
-    <net code="12" name="Net-(J7-Pad1)">
+    <net code="3" name="Net-(J7-Pad1)">
       <node ref="J7" pin="1"/>
     </net>
-    <net code="13" name="Net-(J8-Pad1)">
+    <net code="4" name="Net-(J8-Pad1)">
       <node ref="J8" pin="1"/>
     </net>
-    <net code="14" name="/D3">
-      <node ref="J3" pin="1"/>
-      <node ref="Q1" pin="2"/>
+    <net code="5" name="+BATT">
+      <node ref="J4" pin="1"/>
     </net>
-    <net code="15" name="/D3_5V">
+    <net code="6" name="D5">
+      <node ref="J4" pin="4"/>
+    </net>
+    <net code="7" name="D6">
+      <node ref="J4" pin="5"/>
+      <node ref="J6" pin="1"/>
+    </net>
+    <net code="8" name="D7">
+      <node ref="J4" pin="6"/>
+      <node ref="J5" pin="1"/>
+    </net>
+    <net code="9" name="D8">
+      <node ref="J4" pin="7"/>
+    </net>
+    <net code="10" name="+5V">
+      <node ref="J2" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="C6" pin="1"/>
+    </net>
+    <net code="11" name="A0">
+      <node ref="Q1" pin="2"/>
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="12" name="A0_5V">
       <node ref="C4" pin="1"/>
       <node ref="J1" pin="2"/>
       <node ref="Q1" pin="3"/>
     </net>
-    <net code="16" name="/D4">
-      <node ref="Q2" pin="2"/>
+    <net code="13" name="+3V3">
+      <node ref="J5" pin="3"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="Q2" pin="1"/>
+      <node ref="J4" pin="2"/>
+    </net>
+    <net code="14" name="A1">
       <node ref="J3" pin="2"/>
+      <node ref="Q2" pin="2"/>
     </net>
-    <net code="17" name="/A4">
-      <node ref="J4" pin="6"/>
+    <net code="15" name="A1_5V">
+      <node ref="Q2" pin="3"/>
+      <node ref="C8" pin="1"/>
+      <node ref="J2" pin="2"/>
     </net>
-    <net code="18" name="/BAT+">
-      <node ref="J4" pin="1"/>
+    <net code="16" name="D9">
+      <node ref="J4" pin="8"/>
     </net>
-    <net code="19" name="/A1">
+    <net code="17" name="TX">
+      <node ref="J3" pin="9"/>
+    </net>
+    <net code="18" name="RST">
+      <node ref="J4" pin="9"/>
+    </net>
+    <net code="19" name="MOSI">
+      <node ref="J4" pin="10"/>
+    </net>
+    <net code="20" name="MISO">
+      <node ref="J4" pin="11"/>
+    </net>
+    <net code="21" name="SCK">
+      <node ref="J4" pin="12"/>
+    </net>
+    <net code="22" name="D2">
+      <node ref="J3" pin="10"/>
+    </net>
+    <net code="23" name="RX">
+      <node ref="J3" pin="8"/>
+    </net>
+    <net code="24" name="A7">
       <node ref="J3" pin="7"/>
     </net>
-    <net code="20" name="/A0">
+    <net code="25" name="A6">
       <node ref="J3" pin="6"/>
     </net>
-    <net code="21" name="GND">
-      <node ref="J4" pin="4"/>
-      <node ref="J4" pin="5"/>
-      <node ref="J6" pin="3"/>
+    <net code="26" name="A3">
+      <node ref="J3" pin="3"/>
     </net>
-    <net code="22" name="Net-(C1-Pad2)">
+    <net code="27" name="A4">
+      <node ref="J3" pin="4"/>
+    </net>
+    <net code="28" name="A5">
+      <node ref="J3" pin="5"/>
+    </net>
+    <net code="29" name="D3">
+      <node ref="J3" pin="11"/>
+    </net>
+    <net code="30" name="D4">
+      <node ref="J3" pin="12"/>
+    </net>
+    <net code="31" name="Net-(C1-Pad2)">
       <node ref="C1" pin="2"/>
-      <node ref="SW1" pin="1"/>
       <node ref="J1" pin="4"/>
+      <node ref="SW1" pin="1"/>
     </net>
-    <net code="23" name="Net-(C1-Pad1)">
-      <node ref="C7" pin="2"/>
-      <node ref="C4" pin="2"/>
-      <node ref="C3" pin="2"/>
-      <node ref="C6" pin="2"/>
-      <node ref="C8" pin="2"/>
-      <node ref="C2" pin="2"/>
+    <net code="32" name="Net-(C5-Pad2)">
+      <node ref="J2" pin="4"/>
+      <node ref="C5" pin="2"/>
+      <node ref="SW2" pin="1"/>
+    </net>
+    <net code="33" name="Net-(C1-Pad1)">
       <node ref="C5" pin="1"/>
+      <node ref="C6" pin="2"/>
       <node ref="J2" pin="3"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C7" pin="2"/>
       <node ref="J1" pin="3"/>
       <node ref="U1" pin="1"/>
-      <node ref="C1" pin="1"/>
       <node ref="J6" pin="2"/>
-      <node ref="SW2" pin="2"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C2" pin="2"/>
       <node ref="SW1" pin="2"/>
+      <node ref="SW2" pin="2"/>
     </net>
   </nets>
 </export>

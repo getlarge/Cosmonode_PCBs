@@ -3,7 +3,7 @@
     (string_quote ")
     (space_in_quoted_tokens on)
     (host_cad "KiCad's Pcbnew")
-    (host_version "4.0.7-e2-6376~58~ubuntu17.04.1")
+    (host_version "4.0.7-e2-6376~60~ubuntu17.10.1")
   )
   (resolution um 10)
   (unit um)
@@ -21,12 +21,12 @@
       )
     )
     (boundary
-      (path pcb 0  156845 -88900  154305 -91440  154305 -120650  156845 -123190
-            157480 -123190  178435 -123190  178435 -88900  156845 -88900
-            156845 -88900)
+      (path pcb 0  147320 -90170  144780 -92710  144780 -119380  147320 -121920
+            157480 -121920  177800 -121920  180340 -119380  180340 -92710
+            177800 -90170  157480 -90170  147320 -90170  147320 -90170)
     )
-    (plane "Net-(C1-Pad1)" (polygon F.Cu 0  154305 -91440  154305 -120650  156845 -123190  178435 -123190
-            178435 -88900  156845 -88900  154305 -91440))
+    (plane "Net-(C1-Pad1)" (polygon B.Cu 0  180340 -92710  180340 -119380  177800 -121920  147320 -121920
+            144780 -119380  144780 -92710  147320 -90170  177800 -90170))
     (via "Via[0-1]_600:400_um")
     (rule
       (width 250)
@@ -36,42 +36,71 @@
     )
   )
   (placement
-    (component Capacitors_SMD:C_0603_HandSoldering
-      (place C1 176530 -113665 front 0 (PN 100nF))
-      (place C2 176530 -116840 front 0 (PN 10uF))
-      (place C3 172085 -104140 front 0 (PN 100nF))
-      (place C4 172085 -100965 front 0 (PN 100nF))
-      (place C5 172085 -107315 front 180 (PN 100nF))
-      (place C6 172085 -110490 front 0 (PN 10uF))
-      (place C7 172085 -113665 front 0 (PN 100nF))
-      (place C8 172085 -116840 front 0 (PN 100nF))
+    (component Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm
+      (place J4 176530 -120650 back 270 (PN CONN_01X12))
+      (place J3 148590 -91440 back 90 (PN CONN_01X12))
     )
-    (component Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm
-      (place J3 158750 -120650 back 90 (PN CONN_01X08))
-      (place J4 158750 -91440 back 90 (PN CONN_01X08))
+    (component Capacitors_SMD:C_0603_HandSoldering
+      (place C1 173355 -95250 front 0 (PN 100nF))
+      (place C2 173355 -98425 front 0 (PN 10uF))
+      (place C3 167640 -98425 front 0 (PN 100nF))
+      (place C4 167640 -95250 front 0 (PN 100nF))
+      (place C5 167640 -101600 front 180 (PN 100nF))
+      (place C6 167640 -104775 front 0 (PN 10uF))
+      (place C7 167640 -107950 front 0 (PN 100nF))
+      (place C8 167640 -111125 front 0 (PN 100nF))
     )
     (component Connectors:GS3
-      (place J5 158750 -95250 front 90 (PN GS3))
-      (place J6 165735 -95250 front 90 (PN GS3))
+      (place J5 159385 -116205 front 90 (PN GS3))
+      (place J6 150495 -116205 front 90 (PN GS3))
     )
     (component "TO_SOT_Packages_SMD:SOT-23_Handsoldering"
-      (place Q1 158750 -115570 front 0 (PN BSS138))
-      (place Q2 165735 -115570 front 0 (PN BSS138))
-      (place U1 172720 -95885 front 0 (PN XC6206P502MR))
+      (place Q1 150495 -96520 front 180 (PN BSS138))
+      (place Q2 159385 -96520 front 180 (PN BSS138))
+      (place U1 167640 -115570 front 180 (PN XC6206P502MR))
     )
     (component "Buttons_Switches_SMD:SW_SPST_B3U-1000P"
-      (place SW1 176530 -100330 front 90 (PN SW_Push))
-      (place SW2 176530 -109220 front 90 (PN SW_Push))
+      (place SW1 173355 -103505 front 90 (PN SW_Push))
+      (place SW2 173355 -109855 front 90 (PN SW_Push))
     )
     (component Aloes:Aloes_mini
-      (place J7 175260 -104775 front 90 (PN Aloes_Logo))
+      (place J7 177800 -97155 front 270 (PN Aloes_Logo))
+      (place J8 175260 -97790 back 270 (PN OSHW_Logo))
     )
     (component "Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight"
-      (place J1 158750 -100330 front 0 (PN CONN_01X04))
-      (place J2 158750 -108585 front 0 (PN CONN_01X04))
+      (place J1 150495 -102870 front 270 (PN CONN_01X04))
+      (place J2 160655 -102870 front 270 (PN CONN_01X04))
     )
   )
   (library
+    (image Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm
+      (outline (path signal 100  -1270 1270  -1270 -29210))
+      (outline (path signal 100  -1270 -29210  1270 -29210))
+      (outline (path signal 100  1270 -29210  1270 1270))
+      (outline (path signal 100  1270 1270  -1270 1270))
+      (outline (path signal 120  -1330 -1270  -1330 -29270))
+      (outline (path signal 120  -1330 -29270  1330 -29270))
+      (outline (path signal 120  1330 -29270  1330 -1270))
+      (outline (path signal 120  1330 -1270  -1330 -1270))
+      (outline (path signal 120  -1330 0  -1330 1330))
+      (outline (path signal 120  -1330 1330  0 1330))
+      (outline (path signal 50  -1800 1800  -1800 -29750))
+      (outline (path signal 50  -1800 -29750  1800 -29750))
+      (outline (path signal 50  1800 -29750  1800 1800))
+      (outline (path signal 50  1800 1800  -1800 1800))
+      (pin Rect[A]Pad_1700x1700_um 1 0 0)
+      (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
+      (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
+      (pin Oval[A]Pad_1700x1700_um 4 0 -7620)
+      (pin Oval[A]Pad_1700x1700_um 5 0 -10160)
+      (pin Oval[A]Pad_1700x1700_um 6 0 -12700)
+      (pin Oval[A]Pad_1700x1700_um 7 0 -15240)
+      (pin Oval[A]Pad_1700x1700_um 8 0 -17780)
+      (pin Oval[A]Pad_1700x1700_um 9 0 -20320)
+      (pin Oval[A]Pad_1700x1700_um 10 0 -22860)
+      (pin Oval[A]Pad_1700x1700_um 11 0 -25400)
+      (pin Oval[A]Pad_1700x1700_um 12 0 -27940)
+    )
     (image Capacitors_SMD:C_0603_HandSoldering
       (outline (path signal 100  -800 -400  -800 400))
       (outline (path signal 100  800 -400  -800 -400))
@@ -85,31 +114,6 @@
       (outline (path signal 50  1800 -650  -1800 -650))
       (pin Rect[T]Pad_1200x750_um 1 -950 0)
       (pin Rect[T]Pad_1200x750_um 2 950 0)
-    )
-    (image Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm
-      (outline (path signal 100  -635 1270  1270 1270))
-      (outline (path signal 100  1270 1270  1270 -19050))
-      (outline (path signal 100  1270 -19050  -1270 -19050))
-      (outline (path signal 100  -1270 -19050  -1270 635))
-      (outline (path signal 100  -1270 635  -635 1270))
-      (outline (path signal 120  -1330 -19110  1330 -19110))
-      (outline (path signal 120  -1330 -1270  -1330 -19110))
-      (outline (path signal 120  1330 -1270  1330 -19110))
-      (outline (path signal 120  -1330 -1270  1330 -1270))
-      (outline (path signal 120  -1330 0  -1330 1330))
-      (outline (path signal 120  -1330 1330  0 1330))
-      (outline (path signal 50  -1800 1800  -1800 -19550))
-      (outline (path signal 50  -1800 -19550  1800 -19550))
-      (outline (path signal 50  1800 -19550  1800 1800))
-      (outline (path signal 50  1800 1800  -1800 1800))
-      (pin Rect[A]Pad_1700x1700_um 1 0 0)
-      (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
-      (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
-      (pin Oval[A]Pad_1700x1700_um 4 0 -7620)
-      (pin Oval[A]Pad_1700x1700_um 5 0 -10160)
-      (pin Oval[A]Pad_1700x1700_um 6 0 -12700)
-      (pin Oval[A]Pad_1700x1700_um 7 0 -15240)
-      (pin Oval[A]Pad_1700x1700_um 8 0 -17780)
     )
     (image Connectors:GS3
       (outline (path signal 50  -1150 2150  1150 2150))
@@ -259,63 +263,93 @@
     (net +5V
       (pins C2-1 C3-1 C6-1 C7-1 U1-2 J1-1 J2-1)
     )
-    (net /D3_5V
-      (pins C4-1 Q1-3 J1-2)
-    )
     (net "Net-(C5-Pad2)"
       (pins C5-2 SW2-1 J2-4)
     )
-    (net /D4_5V
-      (pins C8-1 Q2-3 J2-2)
-    )
-    (net /D3
-      (pins J3-1 Q1-2)
-    )
-    (net /D4
-      (pins J3-2 Q2-2)
-    )
-    (net /D5
-      (pins J3-3 J5-1)
-    )
-    (net /D6
-      (pins J3-4 J6-1)
-    )
-    (net /D7
-      (pins J3-5)
-    )
-    (net /A0
-      (pins J3-6)
-    )
-    (net /A1
-      (pins J3-7)
-    )
-    (net /BAT+
-      (pins J4-1)
-    )
     (net +3V3
-      (pins J5-3 Q1-1 Q2-1 J4-2 J4-3)
+      (pins J4-2 J5-3 Q1-1 Q2-1)
     )
     (net GND
-      (pins J6-3 J4-4 J4-5)
-    )
-    (net /A4
-      (pins J4-6)
-    )
-    (net /A5
-      (pins J4-7)
+      (pins J4-3 J6-3)
     )
     (net "Net-(J5-Pad2)"
       (pins J5-2 U1-3)
     )
-    (net /A6
+    (net A0_5V
+      (pins C4-1 Q1-3 J1-2)
+    )
+    (net A1_5V
+      (pins C8-1 Q2-3 J2-2)
+    )
+    (net A0
+      (pins Q1-2 J3-1)
+    )
+    (net A1
+      (pins Q2-2 J3-2)
+    )
+    (net A3
+      (pins J3-3)
+    )
+    (net A4
+      (pins J3-4)
+    )
+    (net A5
+      (pins J3-5)
+    )
+    (net A6
+      (pins J3-6)
+    )
+    (net A7
+      (pins J3-7)
+    )
+    (net RX
       (pins J3-8)
     )
-    (net /AREF
+    (net TX
+      (pins J3-9)
+    )
+    (net D2
+      (pins J3-10)
+    )
+    (net D3
+      (pins J3-11)
+    )
+    (net D4
+      (pins J3-12)
+    )
+    (net +BATT
+      (pins J4-1)
+    )
+    (net D5
+      (pins J4-4)
+    )
+    (net D6
+      (pins J4-5 J6-1)
+    )
+    (net D7
+      (pins J4-6 J5-1)
+    )
+    (net D8
+      (pins J4-7)
+    )
+    (net D9
       (pins J4-8)
     )
-    (class kicad_default "" +3V3 +5V /A0 /A1 /A4 /A5 /A6 /AREF /BAT+ /D3 /D3_5V
-      /D4 /D4_5V /D5 /D6 /D7 GND "Net-(C1-Pad1)" "Net-(C1-Pad2)" "Net-(C5-Pad2)"
-      "Net-(J5-Pad2)"
+    (net RST
+      (pins J4-9)
+    )
+    (net MOSI
+      (pins J4-10)
+    )
+    (net MISO
+      (pins J4-11)
+    )
+    (net SCK
+      (pins J4-12)
+    )
+    (class kicad_default "" +3V3 +5V +BATT A0 A0_5V A1 A1_5V A3 A4 A5 A6 A7
+      D2 D3 D4 D5 D6 D7 D8 D9 GND MISO MOSI "Net-(C1-Pad1)" "Net-(C1-Pad2)"
+      "Net-(C5-Pad2)" "Net-(J5-Pad2)" RST RX SCK TX
       (circuit
         (use_via Via[0-1]_600:400_um)
       )
