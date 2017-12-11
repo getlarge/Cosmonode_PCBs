@@ -2,7 +2,8 @@
 
 Universal node, plug and play extensions to ease sensors connection.
 
-## Features :
+
+## Features
 
 - Compile and flash with Arduino IDE
 - MCU = ATMega328P-AU
@@ -16,13 +17,16 @@ Universal node, plug and play extensions to ease sensors connection.
 - Button for reset / config mode
 - ATSHA204 to allow hardware unique signature 
 
+
 ## Projects
 
 Each directory contains Kicad plans, 3D plans, gerber, descriptive .png and .pdf files.
 
-ext02 : XKC-Y25 Liquid level sensor
-ext03 : Various connectors ( I2C, Digital, Analog )
-ext04 : PT100 3 wire sensor
-ext05 : ISP header + micro USB to TTL
-ext06 : pH Sensor - BNC probe
-ext07 : CO2 - MHZ19 sensor
+- ext01 : BME280, Temperature + Humidity + Pression sensor
+- ext02 : XKC-Y25, Liquid level sensor
+- ext03 : Various connectors ( I2C, Digital, Analog )
+- ext04 : PT100 3 wire, Temperature sensor
+- ext05 : ISP header + micro USB to TTL
+- ext06 : pH Sensor - BNC probe
+- ext07 : MHZ19, CO2 sensor
+- 3d : contains fully mounted node 3D views
