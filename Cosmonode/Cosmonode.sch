@@ -441,17 +441,15 @@ F 3 "" H 9200 1000 50  0001 C CNN
 	1    9200 1000
 	1    0    0    -1  
 $EndComp
-Text Notes 15250 2900 0    60   ~ 0
-CONNECTORS
 $Comp
 L SW_DIP_x01 SW1
 U 1 1 5978A193
-P 4050 3050
-F 0 "SW1" H 4050 3200 50  0000 C CNN
-F 1 "SW_DIP_x01" H 4050 2900 50  0000 C CNN
-F 2 "w_switch:smd_push2" H 4050 3050 50  0001 C CNN
-F 3 "" H 4050 3050 50  0001 C CNN
-	1    4050 3050
+P 4350 3300
+F 0 "SW1" H 4350 3450 50  0000 C CNN
+F 1 "SW_DIP_x01" H 4350 3150 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_Tactile_SPST_Angled_PTS645Vx58-2LFS" H 4350 3300 50  0001 C CNN
+F 3 "" H 4350 3300 50  0001 C CNN
+	1    4350 3300
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -523,13 +521,13 @@ $EndComp
 $Comp
 L GND #PWR09
 U 1 1 597F4ED2
-P 4050 3450
-F 0 "#PWR09" H 4050 3200 50  0001 C CNN
-F 1 "GND" H 4050 3300 50  0000 C CNN
-F 2 "" H 4050 3450 50  0001 C CNN
-F 3 "" H 4050 3450 50  0001 C CNN
-	1    4050 3450
-	0    -1   -1   0   
+P 4350 3600
+F 0 "#PWR09" H 4350 3350 50  0001 C CNN
+F 1 "GND" H 4350 3450 50  0000 C CNN
+F 2 "" H 4350 3600 50  0001 C CNN
+F 3 "" H 4350 3600 50  0001 C CNN
+	1    4350 3600
+	1    0    0    -1  
 $EndComp
 $Comp
 L RFM69CW U2
@@ -1198,7 +1196,7 @@ F 3 "" H 4350 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1500 5850 0    51   BiDi ~ 0
-D12/MISO
+D9
 Text Notes 7250 6450 0    47   ~ 0
 Charger Regulation - R11\n10K = 100mA\n5K = 200mA\n2K = 500mA\n1K = 1000mA
 $Comp
@@ -1490,7 +1488,7 @@ ANT
 Text GLabel 2000 4550 3    51   BiDi ~ 0
 ANT
 Text GLabel 5150 7000 2    51   BiDi ~ 0
-D3
+D2
 Wire Wire Line
 	1050 1150 1600 1150
 Wire Wire Line
@@ -1616,8 +1614,6 @@ Wire Notes Line
 	500  3900 500  3950
 Wire Notes Line
 	7200 500  7200 6500
-Wire Wire Line
-	4050 3350 4050 3450
 Wire Wire Line
 	6200 4900 6600 4900
 Wire Wire Line
@@ -1788,4 +1784,21 @@ F 3 "" H 8350 4850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8350 4650 8350 4750
+Text GLabel 4050 3250 3    51   BiDi ~ 0
+D3
+$Comp
+L Jumper_NC_Dual JP2
+U 1 1 5A2EFA3D
+P 4050 3000
+F 0 "JP2" H 4100 2900 50  0000 L CNN
+F 1 "Jumper_NC_Dual" H 4050 3100 50  0000 C BNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 4050 3000 50  0001 C CNN
+F 3 "" H 4050 3000 50  0001 C CNN
+	1    4050 3000
+	0    -1   -1   0   
+$EndComp
+Text Notes 550  7400 0    47   ~ 0
+A0 =\nA1 =\nA2 = ATSHA204\nA3 = Battery Report\nA4 = SDA\nA5 = SCL\nA6 = RN2483 Rx LED \nA7 = RN2483 Tx LED\nD0 = RX\nD1 = TX\nD2 = ResetInterrupt ( from RN2483 ) or RFM69 DI0\nD3 = ButtonInterrupt ( ask for config )\nD4 =\nD5 =\nD6 =\nD7 = \nD8 =\nD9 = RN2483 Reset - RFM69 Reset\nD10 =RN2483 Rx - RFM69 NSS\nD11 = RN2483 Tx - RFM69 MOSI\nD12 = RFM69 MISO\nD13 = RFM69 SCK
+Wire Wire Line
+	4150 3000 4350 3000
 $EndSCHEMATC

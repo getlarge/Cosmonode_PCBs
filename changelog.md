@@ -1,25 +1,26 @@
-Contains Kicad plan for the mother board, and 8 extensions.
+# Roadmap
 
-# v0.8 ( Future developpement )
-- Native ( still optional ) T+H ambiant sensor
+## v0.8 ( Future developpement )
+
 - NFC reader
 
-# v0.7 ( WIP )
+## v0.7 ( WIP )
+
 - change LED positions ( make it visible from outside )
-- Added VDD jumper ( you may add a on/off switch )
 - Removed MP2540 ( flash memory )
+- Config button ( angled 90°, access from the left )
+- Add jumper to choose SW1 button function ( RST or D3 )
+- Add native I2C header to all extensions ( change format )
+
+## v0.6
 - Placed RN2483 + RFM69CW footprints on the Bottom layer
-- Config button ( angled 90°, access from the right ? )
+- Added VDD jumper ( you may add a on/off switch )
+- Removed BSS123 for radio reset regulation
 
-
-# v0.6
+## v0.5
 - Changed form factor ( mostly pins header, previous version deprecated )
-- Tested RN2483 integration
 - Moved radio to the bottom layer
-- Battery charging ( MCP7381 )
-- Blocking diodes
+- Tested RN2483 integration
 - Port SMA ( antenna )
-
-# v0.5
-
-	
+- Add Blocking diodes
+- Battery charging ( MCP7381 )

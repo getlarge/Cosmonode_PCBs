@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/ed/Kicad/Cosmonode_full/Cosmonode_ext02/Cosmonode_ext02.sch</source>
-    <date>mer. 29 nov. 2017 12:37:15 CET</date>
+    <date>lun. 11 déc. 2017 15:55:27 CET</date>
     <tool>Eeschema 4.0.7-e2-6376~60~ubuntu17.10.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -174,6 +174,13 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>598047EF</tstamp>
     </comp>
+    <comp ref="J9">
+      <value>CONN_01X04</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2E9D5D</tstamp>
+    </comp>
   </components>
   <libparts>
     <libpart lib="transistors" part="BSS138">
@@ -320,157 +327,161 @@
     </libpart>
   </libparts>
   <libraries>
-    <library logical="switches">
-      <uri>/home/ed/Kicad/kicad-library/library/switches.lib</uri>
-    </library>
     <library logical="device">
       <uri>/home/ed/Kicad/kicad-library/library/device.lib</uri>
     </library>
-    <library logical="conn">
-      <uri>/home/ed/Kicad/kicad-library/library/conn.lib</uri>
+    <library logical="switches">
+      <uri>/home/ed/Kicad/kicad-library/library/switches.lib</uri>
     </library>
     <library logical="transistors">
       <uri>/home/ed/Kicad/kicad-library/library/transistors.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/home/ed/Kicad/kicad-library/library/conn.lib</uri>
     </library>
     <library logical="XC6206P302MR_SOT23_">
       <uri>/home/ed/Kicad/library/XC6206P302MR_SOT23_.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="GND">
-      <node ref="J6" pin="3"/>
-      <node ref="J4" pin="3"/>
-    </net>
-    <net code="2" name="Net-(J5-Pad2)">
-      <node ref="U1" pin="3"/>
-      <node ref="J5" pin="2"/>
-    </net>
-    <net code="3" name="Net-(J7-Pad1)">
-      <node ref="J7" pin="1"/>
-    </net>
-    <net code="4" name="Net-(J8-Pad1)">
-      <node ref="J8" pin="1"/>
-    </net>
-    <net code="5" name="+BATT">
+    <net code="1" name="+BATT">
       <node ref="J4" pin="1"/>
     </net>
-    <net code="6" name="D5">
+    <net code="2" name="Net-(J7-Pad1)">
+      <node ref="J7" pin="1"/>
+    </net>
+    <net code="3" name="Net-(J8-Pad1)">
+      <node ref="J8" pin="1"/>
+    </net>
+    <net code="4" name="D5">
       <node ref="J4" pin="4"/>
     </net>
-    <net code="7" name="D6">
-      <node ref="J4" pin="5"/>
+    <net code="5" name="D6">
       <node ref="J6" pin="1"/>
+      <node ref="J4" pin="5"/>
     </net>
-    <net code="8" name="D7">
+    <net code="6" name="D7">
       <node ref="J4" pin="6"/>
       <node ref="J5" pin="1"/>
     </net>
-    <net code="9" name="D8">
+    <net code="7" name="D8">
       <node ref="J4" pin="7"/>
     </net>
-    <net code="10" name="+5V">
-      <node ref="J2" pin="1"/>
-      <node ref="J1" pin="1"/>
-      <node ref="C3" pin="1"/>
-      <node ref="C2" pin="1"/>
-      <node ref="C7" pin="1"/>
-      <node ref="U1" pin="2"/>
-      <node ref="C6" pin="1"/>
-    </net>
-    <net code="11" name="A0">
-      <node ref="Q1" pin="2"/>
-      <node ref="J3" pin="1"/>
-    </net>
-    <net code="12" name="A0_5V">
-      <node ref="C4" pin="1"/>
-      <node ref="J1" pin="2"/>
-      <node ref="Q1" pin="3"/>
-    </net>
-    <net code="13" name="+3V3">
-      <node ref="J5" pin="3"/>
-      <node ref="Q1" pin="1"/>
-      <node ref="Q2" pin="1"/>
-      <node ref="J4" pin="2"/>
-    </net>
-    <net code="14" name="A1">
-      <node ref="J3" pin="2"/>
-      <node ref="Q2" pin="2"/>
-    </net>
-    <net code="15" name="A1_5V">
-      <node ref="Q2" pin="3"/>
-      <node ref="C8" pin="1"/>
-      <node ref="J2" pin="2"/>
-    </net>
-    <net code="16" name="D9">
+    <net code="8" name="D9">
       <node ref="J4" pin="8"/>
     </net>
-    <net code="17" name="TX">
-      <node ref="J3" pin="9"/>
-    </net>
-    <net code="18" name="RST">
+    <net code="9" name="RST">
       <node ref="J4" pin="9"/>
     </net>
-    <net code="19" name="MOSI">
+    <net code="10" name="MOSI">
       <node ref="J4" pin="10"/>
     </net>
-    <net code="20" name="MISO">
+    <net code="11" name="MISO">
       <node ref="J4" pin="11"/>
     </net>
-    <net code="21" name="SCK">
+    <net code="12" name="SCK">
       <node ref="J4" pin="12"/>
     </net>
-    <net code="22" name="D2">
+    <net code="13" name="A0_5V">
+      <node ref="C4" pin="1"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="14" name="+3V3">
+      <node ref="J4" pin="2"/>
+      <node ref="J9" pin="1"/>
+      <node ref="Q2" pin="1"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="J5" pin="3"/>
+    </net>
+    <net code="15" name="A1_5V">
+      <node ref="C8" pin="1"/>
+      <node ref="J2" pin="2"/>
+      <node ref="Q2" pin="3"/>
+    </net>
+    <net code="16" name="+5V">
+      <node ref="U1" pin="2"/>
+      <node ref="C3" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="J2" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="C6" pin="1"/>
+    </net>
+    <net code="17" name="Net-(J5-Pad2)">
+      <node ref="J5" pin="2"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="18" name="D2">
       <node ref="J3" pin="10"/>
     </net>
-    <net code="23" name="RX">
+    <net code="19" name="TX">
+      <node ref="J3" pin="9"/>
+    </net>
+    <net code="20" name="RX">
       <node ref="J3" pin="8"/>
     </net>
-    <net code="24" name="A7">
+    <net code="21" name="A7">
       <node ref="J3" pin="7"/>
     </net>
-    <net code="25" name="A6">
+    <net code="22" name="A6">
       <node ref="J3" pin="6"/>
     </net>
-    <net code="26" name="A3">
-      <node ref="J3" pin="3"/>
-    </net>
-    <net code="27" name="A4">
-      <node ref="J3" pin="4"/>
-    </net>
-    <net code="28" name="A5">
-      <node ref="J3" pin="5"/>
-    </net>
-    <net code="29" name="D3">
+    <net code="23" name="D3">
       <node ref="J3" pin="11"/>
     </net>
-    <net code="30" name="D4">
+    <net code="24" name="D4">
       <node ref="J3" pin="12"/>
     </net>
-    <net code="31" name="Net-(C1-Pad2)">
-      <node ref="C1" pin="2"/>
+    <net code="25" name="A5">
+      <node ref="J9" pin="3"/>
+      <node ref="J3" pin="5"/>
+    </net>
+    <net code="26" name="A4">
+      <node ref="J3" pin="4"/>
+      <node ref="J9" pin="4"/>
+    </net>
+    <net code="27" name="GND">
+      <node ref="J6" pin="3"/>
+      <node ref="J9" pin="2"/>
+      <node ref="J4" pin="3"/>
+    </net>
+    <net code="28" name="A3">
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="29" name="Net-(C1-Pad2)">
       <node ref="J1" pin="4"/>
       <node ref="SW1" pin="1"/>
+      <node ref="C1" pin="2"/>
     </net>
-    <net code="32" name="Net-(C5-Pad2)">
-      <node ref="J2" pin="4"/>
+    <net code="30" name="A1">
+      <node ref="Q2" pin="2"/>
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="31" name="Net-(C5-Pad2)">
       <node ref="C5" pin="2"/>
+      <node ref="J2" pin="4"/>
       <node ref="SW2" pin="1"/>
     </net>
+    <net code="32" name="A0">
+      <node ref="J3" pin="1"/>
+      <node ref="Q1" pin="2"/>
+    </net>
     <net code="33" name="Net-(C1-Pad1)">
-      <node ref="C5" pin="1"/>
-      <node ref="C6" pin="2"/>
       <node ref="J2" pin="3"/>
+      <node ref="C5" pin="1"/>
       <node ref="C8" pin="2"/>
-      <node ref="C7" pin="2"/>
-      <node ref="J1" pin="3"/>
-      <node ref="U1" pin="1"/>
+      <node ref="C6" pin="2"/>
       <node ref="J6" pin="2"/>
-      <node ref="C1" pin="1"/>
-      <node ref="C4" pin="2"/>
-      <node ref="C3" pin="2"/>
-      <node ref="C2" pin="2"/>
-      <node ref="SW1" pin="2"/>
+      <node ref="C7" pin="2"/>
       <node ref="SW2" pin="2"/>
+      <node ref="J1" pin="3"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="U1" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C1" pin="1"/>
     </net>
   </nets>
 </export>

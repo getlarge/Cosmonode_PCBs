@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/ed/Kicad/Cosmonode_full/BME280/BME280.sch</source>
+    <date>lun. 11 déc. 2017 16:09:25 CET</date>
+    <tool>Eeschema 4.0.7-e2-6376~60~ubuntu17.10.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>BME280.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>CONN_01X04</value>
+      <footprint>Pin_Headers:Pin_Header_Angled_1x04_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2EA633</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>SI7020-A20-YM0R</value>
+      <footprint>SI7020-A20-YM0R:SON100P300X300X80-7N</footprint>
+      <datasheet>SI7020-A20-YM0R</datasheet>
+      <fields>
+        <field name="Price">3.20 USD</field>
+        <field name="Package">DFN-6 Silicon Labs</field>
+        <field name="MF">Silicon Labs</field>
+        <field name="Availability">Unavailable</field>
+        <field name="Description">Digital Temperature/Humidity Sensor 6-Pin DFN T/R</field>
+      </fields>
+      <libsource lib="SI7020-A20-YM0R" part="SI7020-A20-YM0R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A2EA676</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="conn" part="CONN_01X04">
+      <description>Connector, single row, 01x04, pin header</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X*</fp>
+        <fp>Pin_Header_Angled_1X*</fp>
+        <fp>Socket_Strip_Straight_1X*</fp>
+        <fp>Socket_Strip_Angled_1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SI7020-A20-YM0R" part="SI7020-A20-YM0R">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SI7020-A20-YM0R</field>
+        <field name="Footprint">SON100P300X300X80-7N</field>
+        <field name="Datasheet">SI7020-A20-YM0R</field>
+        <field name="Price">3.20 USD</field>
+        <field name="Package">DFN-6 Silicon Labs</field>
+        <field name="MF">Silicon Labs</field>
+        <field name="Availability">Unavailable</field>
+        <field name="Description">Digital Temperature/Humidity Sensor 6-Pin DFN T/R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SDA" type="BiDi"/>
+        <pin num="2" name="GND" type="input"/>
+        <pin num="3" name="DNC@1" type="BiDi"/>
+        <pin num="4" name="DNC@2" type="BiDi"/>
+        <pin num="5" name="VDD" type="input"/>
+        <pin num="6" name="SCL" type="BiDi"/>
+        <pin num="7" name="TGND" type="BiDi"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="SI7020-A20-YM0R">
+      <uri>/home/ed/Kicad/library/SI7020-A20-YM0R.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/home/ed/Kicad/kicad-library/library/conn.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(U1-Pad3)">
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="2" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="3" name="GND">
+      <node ref="J1" pin="2"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="4" name="+3V3">
+      <node ref="U1" pin="5"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="5" name="A5">
+      <node ref="U1" pin="6"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="6" name="A4">
+      <node ref="U1" pin="1"/>
+      <node ref="J1" pin="4"/>
+    </net>
+  </nets>
+</export>
