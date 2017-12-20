@@ -30,8 +30,8 @@ Each directory contains Kicad plans, 3D plans, gerber, descriptive .png and .pdf
 
 ### Board pinout
 
-	A0 = /
-	A1 = /
+	- A0 = /
+	- A1 = /
 	A2 = ATSHA204 Input
 	A3 = Battery voltage report
 	A4 = SDA
