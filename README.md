@@ -5,28 +5,28 @@ Universal node, plug and play extensions to ease sensors connection.
 
 ### Features
 
-- Compile and flash with Arduino IDE
-- MCU = ATMega328P-AU
-- radio = RN2483 / RFM69CW ( communications based on LoRaWan or MySensors protocol )
-- 3.3V regulation ( XC6206P332MR )
-- Powered by 3.7V LiPo battery ( 2 pins JST connector )
-- Battery charging ( MCP7831 )
-- State LED's
-- Jumpers to activate radio reset, LED's, on/off switch
-- Button for reset / config mode, or anything else!
-- ATSHA204 to allow hardware unique signature ( no use with RN2483 )
+	- Compile and flash with Arduino IDE
+	- MCU = ATMega328P-AU
+	- radio = RN2483 / RFM69CW ( communications based on LoRaWan or MySensors protocol )
+	- 3.3V regulation ( XC6206P332MR )
+	- Powered by 3.7V LiPo battery ( 2 pins JST connector )
+	- Battery charging ( MCP7831 )
+	- State LED's
+	- Jumpers to activate radio reset, LED's, on/off switch
+	- Button for reset / config mode, or anything else!
+	- ATSHA204 to allow hardware unique signature ( no use with RN2483 )
 
 ### Projects
 
 Each directory contains Kicad plans, 3D plans, gerber, descriptive .png and .pdf files.
 
-- ext01 : BME280, Temperature + Humidity + Pression sensor ( only here for the footprint )
-- ext02 : XKC-Y25, Liquid level sensor
-- ext03 : Various connectors ( I2C, Digital, Analog )
-- ext04 : PT100 3 wire, Temperature sensor
-- ext05 : ISP header + micro USB to TTL 
-- ext06 : Analog pH Sensor - BNC probe (WIP)
-- ext07 : MHZ19, CO2 sensor
+	- ext01 : BME280, Temperature + Humidity + Pression sensor ( only here for the footprint )
+	- ext02 : XKC-Y25, Liquid level sensor
+	- ext03 : Various connectors ( I2C, Digital, Analog )
+	- ext04 : PT100 3 wire, Temperature sensor
+	- ext05 : ISP header + micro USB to TTL 
+	- ext06 : Analog pH Sensor - BNC probe (WIP)
+	- ext07 : MHZ19, CO2 sensor
 
 ### Board pinout
 
@@ -56,4 +56,4 @@ Each directory contains Kicad plans, 3D plans, gerber, descriptive .png and .pdf
 
 ### Roadmap
 
-- changelog.md
+--> changelog.md
