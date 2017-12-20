@@ -193,17 +193,6 @@ F 3 "" H 4050 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
-U 1 1 5972193B
-P 3950 1050
-F 0 "R1" V 4030 1050 50  0000 C CNN
-F 1 "10k" V 3950 1050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 3880 1050 50  0001 C CNN
-F 3 "" H 3950 1050 50  0001 C CNN
-	1    3950 1050
-	0    1    1    0   
-$EndComp
-$Comp
 L R R8
 U 1 1 59721962
 P 10600 4650
@@ -508,17 +497,6 @@ F 3 "" H 5750 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mounting_Hole MK1
-U 1 1 597EE45D
-P 6500 1500
-F 0 "MK1" H 6500 1700 50  0000 C CNN
-F 1 "Mounting_Hole" H 6500 1625 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_2.2mm_M2_ISO14580" H 6500 1500 50  0001 C CNN
-F 3 "" H 6500 1500 50  0001 C CNN
-	1    6500 1500
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR09
 U 1 1 597F4ED2
 P 4350 3600
@@ -593,17 +571,6 @@ F 1 "+3.3V" H 1050 1290 50  0000 C CNN
 F 2 "" H 1050 1150 50  0001 C CNN
 F 3 "" H 1050 1150 50  0001 C CNN
 	1    1050 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR015
-U 1 1 597F60B3
-P 4250 1000
-F 0 "#PWR015" H 4250 850 50  0001 C CNN
-F 1 "+3.3V" H 4250 1140 50  0000 C CNN
-F 2 "" H 4250 1000 50  0001 C CNN
-F 3 "" H 4250 1000 50  0001 C CNN
-	1    4250 1000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -769,7 +736,7 @@ A4
 Text GLabel 3500 2300 2    51   BiDi ~ 0
 A3
 Text Notes 7100 6850 0    60   ~ 0
-Cosmonode v0.5\nATmega328p\nRFM69 or RN 2483 ( both 868Mhz Radio )
+Cosmonode v0.7\nATmega328p\nRFM69CW or RN 2483 ( both 868Mhz Radio )
 Text GLabel 3500 2200 2    51   BiDi ~ 0
 A2
 Text GLabel 3500 2100 2    51   BiDi ~ 0
@@ -786,7 +753,7 @@ Text GLabel 3700 1350 2    51   BiDi ~ 0
 D10
 Text GLabel 3500 1250 2    51   BiDi ~ 0
 D9
-Text GLabel 3550 1050 1    51   BiDi ~ 0
+Text GLabel 3500 1150 2    51   BiDi ~ 0
 D8
 Text GLabel 1600 2500 0    51   BiDi ~ 0
 A6
@@ -1057,9 +1024,9 @@ F 3 "" H 2900 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4600 6850 2    51   BiDi ~ 0
-D11/MOSI
+D8
 Text GLabel 4600 6750 2    51   BiDi ~ 0
-D10
+D9
 NoConn ~ 4600 6950
 NoConn ~ 4600 7050
 NoConn ~ 4600 7150
@@ -1142,7 +1109,7 @@ NoConn ~ 2800 6450
 NoConn ~ 2800 6550
 NoConn ~ 2800 6650
 Text Label 2200 5850 0    51   ~ 0
-RADIO_RESET
+RN2483_RST
 $Comp
 L +3.3V #PWR038
 U 1 1 59F4DC91
@@ -1196,7 +1163,7 @@ F 3 "" H 4350 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1500 5850 0    51   BiDi ~ 0
-D9
+D10
 Text Notes 7250 6450 0    47   ~ 0
 Charger Regulation - R11\n10K = 100mA\n5K = 200mA\n2K = 500mA\n1K = 1000mA
 $Comp
@@ -1536,12 +1503,6 @@ Wire Wire Line
 Wire Wire Line
 	4350 1850 4400 1850
 Wire Wire Line
-	3500 1150 3700 1150
-Wire Wire Line
-	3700 1150 3700 1050
-Wire Wire Line
-	3700 1050 3800 1050
-Wire Wire Line
 	3800 1700 3800 1750
 Wire Wire Line
 	3800 1750 3500 1750
@@ -1632,9 +1593,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 2600 3850 2550
 Connection ~ 3850 2600
-Wire Wire Line
-	3550 1150 3550 1050
-Connection ~ 3550 1150
 Connection ~ 9650 2750
 Wire Wire Line
 	9550 800  9400 800 
@@ -1750,10 +1708,6 @@ Wire Wire Line
 	6200 5000 6750 5000
 Wire Wire Line
 	2000 4350 2000 4550
-Wire Wire Line
-	4250 1000 4250 1050
-Wire Wire Line
-	4250 1050 4100 1050
 $Comp
 L GS2 J6
 U 1 1 5A1BEE57
@@ -1798,7 +1752,7 @@ F 3 "" H 4050 3000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Notes 550  7400 0    47   ~ 0
-A0 =\nA1 =\nA2 = ATSHA204\nA3 = Battery Report\nA4 = SDA\nA5 = SCL\nA6 = RN2483 Rx LED \nA7 = RN2483 Tx LED\nD0 = RX\nD1 = TX\nD2 = ResetInterrupt ( from RN2483 ) or RFM69 DI0\nD3 = ButtonInterrupt ( ask for config )\nD4 =\nD5 =\nD6 =\nD7 = \nD8 =\nD9 = RN2483 Reset - RFM69 Reset\nD10 =RN2483 Rx - RFM69 NSS\nD11 = RN2483 Tx - RFM69 MOSI\nD12 = RFM69 MISO\nD13 = RFM69 SCK
+A0 =\nA1 =\nA2 = ATSHA204\nA3 = Battery Report\nA4 = SDA\nA5 = SCL\nA6 = RN2483 Rx LED \nA7 = RN2483 Tx LED\nD0 = RX\nD1 = TX\nD2 = ResetInterrupt ( from RN2483 ) or RFM69 DI0\nD3 = ButtonInterrupt ( ask for config )\nD4 =\nD5 =\nD6 =\nD7 = \nD8 = RN2483 Tx \nD9 =  RN2483 Rx - RFM69 Reset\nD10 = RN2483 Reset - RFM69 NSS\nD11 =  - RFM69 MOSI\nD12 = RFM69 MISO\nD13 = RFM69 SCK
 Wire Wire Line
 	4150 3000 4350 3000
 $EndSCHEMATC

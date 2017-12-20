@@ -447,7 +447,7 @@ U 1 1 5978A193
 P 4350 3300
 F 0 "SW1" H 4350 3450 50  0000 C CNN
 F 1 "SW_DIP_x01" H 4350 3150 50  0000 C CNN
-F 2 "Buttons_Switches_THT:SW_Tactile_SPST_Angled_PTS645Vx83-2LFS" H 4350 3300 50  0001 C CNN
+F 2 "Buttons_Switches_THT:SW_Tactile_SPST_Angled_PTS645Vx58-2LFS" H 4350 3300 50  0001 C CNN
 F 3 "" H 4350 3300 50  0001 C CNN
 	1    4350 3300
 	0    -1   -1   0   
@@ -505,17 +505,6 @@ F 1 "OSHW" V 5850 950 50  0000 C CNN
 F 2 "Symbols:OSHW-Logo_7.5x8mm_Copper" H 5750 950 50  0001 C CNN
 F 3 "" H 5750 950 50  0001 C CNN
 	1    5750 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mounting_Hole MK1
-U 1 1 597EE45D
-P 6500 1500
-F 0 "MK1" H 6500 1700 50  0000 C CNN
-F 1 "Mounting_Hole" H 6500 1625 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_2.2mm_M2_ISO14580" H 6500 1500 50  0001 C CNN
-F 3 "" H 6500 1500 50  0001 C CNN
-	1    6500 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -769,7 +758,7 @@ A4
 Text GLabel 3500 2300 2    51   BiDi ~ 0
 A3
 Text Notes 7100 6850 0    60   ~ 0
-Cosmonode v0.5\nATmega328p\nRFM69 or RN 2483 ( both 868Mhz Radio )
+Cosmonode v0.7\nATmega328p\nRFM69CW or RN 2483 ( both 868Mhz Radio )
 Text GLabel 3500 2200 2    51   BiDi ~ 0
 A2
 Text GLabel 3500 2100 2    51   BiDi ~ 0
@@ -1142,7 +1131,7 @@ NoConn ~ 2800 6450
 NoConn ~ 2800 6550
 NoConn ~ 2800 6650
 Text Label 2200 5850 0    51   ~ 0
-RADIO_RESET
+RN2483_RST
 $Comp
 L +3.3V #PWR038
 U 1 1 59F4DC91
@@ -1672,7 +1661,7 @@ Wire Wire Line
 Wire Wire Line
 	8150 6300 8150 5600
 Wire Wire Line
-	8350 5600 8150 5600
+	8150 5600 8350 5600
 Connection ~ 8350 5600
 Wire Wire Line
 	8350 5900 8350 6100

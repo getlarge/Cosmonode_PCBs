@@ -21,3 +21,4 @@ Reference, Value, Footprint, Datasheet, Description, MF, Package, Price, MP
 "J8","OSHW_Logo","Symbols:OSHW-Logo_5.7x6mm_SilkScreen",""
 "J4","CONN_01X12","Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm",""
 "J9","CONN_01X04","Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm",""
+"J10","CONN_01X06","Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm",""

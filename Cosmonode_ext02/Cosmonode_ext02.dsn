@@ -22,11 +22,14 @@
     )
     (boundary
       (path pcb 0  147320 -90170  144780 -92710  144780 -119380  147320 -121920
-            157480 -121920  177800 -121920  180340 -119380  180340 -92710
-            177800 -90170  157480 -90170  147320 -90170  147320 -90170)
+            157480 -121920  177800 -121920  190500 -121920  190500 -111760
+            180340 -111760  180340 -92710  177800 -90170  157480 -90170
+            147320 -90170  147320 -90170)
     )
-    (plane "Net-(C1-Pad1)" (polygon B.Cu 0  180340 -92710  180340 -119380  177800 -121920  147320 -121920
-            144780 -119380  144780 -92710  147320 -90170  177800 -90170))
+    (plane "Net-(C1-Pad1)" (polygon B.Cu 0  180340 -92710  180340 -111760  190500 -111760  190500 -121920
+            147320 -121920  144780 -119380  144780 -92710  147320 -90170
+            177800 -90170))
+    (keepout "" (polygon signal 0  190500 -111760  190500 -121920  190500 -111760  190500 -111760))
     (via "Via[0-1]_600:400_um")
     (rule
       (width 250)
@@ -64,12 +67,18 @@
       (place SW2 173355 -109855 front 90 (PN SW_Push))
     )
     (component Aloes:Aloes_mini
-      (place J7 177800 -97155 front 270 (PN Aloes_Logo))
+      (place J7 176530 -115570 front 0 (PN Aloes_Logo))
       (place J8 175260 -97790 back 270 (PN OSHW_Logo))
     )
     (component "Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight"
       (place J1 150495 -102870 front 270 (PN CONN_01X04))
       (place J2 160655 -102870 front 270 (PN CONN_01X04))
+    )
+    (component Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm
+      (place J9 189230 -113030 front 0 (PN CONN_01X04))
+    )
+    (component Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm
+      (place J10 178435 -102870 front 0 (PN CONN_01X04))
     )
   )
   (library
@@ -211,6 +220,47 @@
       (pin Round[A]Pad_1750_um 3 5000 0)
       (pin Round[A]Pad_1750_um 4 7500 0)
     )
+    (image Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm
+      (outline (path signal 100  -1270 1270  -1270 -8890))
+      (outline (path signal 100  -1270 -8890  1270 -8890))
+      (outline (path signal 100  1270 -8890  1270 1270))
+      (outline (path signal 100  1270 1270  -1270 1270))
+      (outline (path signal 120  -1330 -1270  -1330 -8950))
+      (outline (path signal 120  -1330 -8950  1330 -8950))
+      (outline (path signal 120  1330 -8950  1330 -1270))
+      (outline (path signal 120  1330 -1270  -1330 -1270))
+      (outline (path signal 120  -1330 0  -1330 1330))
+      (outline (path signal 120  -1330 1330  0 1330))
+      (outline (path signal 50  -1800 1800  -1800 -9400))
+      (outline (path signal 50  -1800 -9400  1800 -9400))
+      (outline (path signal 50  1800 -9400  1800 1800))
+      (outline (path signal 50  1800 1800  -1800 1800))
+      (pin Rect[A]Pad_1700x1700_um 1 0 0)
+      (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
+      (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
+      (pin Oval[A]Pad_1700x1700_um 4 0 -7620)
+    )
+    (image Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  1270 1270  1270 -8890))
+      (outline (path signal 100  1270 -8890  -1270 -8890))
+      (outline (path signal 100  -1270 -8890  -1270 635))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 120  -1330 -8950  1330 -8950))
+      (outline (path signal 120  -1330 -1270  -1330 -8950))
+      (outline (path signal 120  1330 -1270  1330 -8950))
+      (outline (path signal 120  -1330 -1270  1330 -1270))
+      (outline (path signal 120  -1330 0  -1330 1330))
+      (outline (path signal 120  -1330 1330  0 1330))
+      (outline (path signal 50  -1800 1800  -1800 -9400))
+      (outline (path signal 50  -1800 -9400  1800 -9400))
+      (outline (path signal 50  1800 -9400  1800 1800))
+      (outline (path signal 50  1800 1800  -1800 1800))
+      (pin Rect[A]Pad_1700x1700_um 1 0 0)
+      (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
+      (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
+      (pin Oval[A]Pad_1700x1700_um 4 0 -7620)
+    )
     (padstack Round[A]Pad_1750_um
       (shape (circle F.Cu 1750))
       (shape (circle B.Cu 1750))
@@ -267,10 +317,10 @@
       (pins C5-2 SW2-1 J2-4)
     )
     (net +3V3
-      (pins J4-2 J5-3 Q1-1 Q2-1)
+      (pins J4-2 J5-3 Q1-1 Q2-1 J9-1 J10-1)
     )
     (net GND
-      (pins J4-3 J6-3)
+      (pins J4-3 J6-3 J9-2 J10-2)
     )
     (net "Net-(J5-Pad2)"
       (pins J5-2 U1-3)
@@ -291,10 +341,10 @@
       (pins J3-3)
     )
     (net A4
-      (pins J3-4)
+      (pins J3-4 J9-4 J10-4)
     )
     (net A5
-      (pins J3-5)
+      (pins J3-5 J9-3 J10-3)
     )
     (net A6
       (pins J3-6)
